@@ -371,7 +371,7 @@ public class GruppenstundenAktualisieren extends javax.swing.JFrame {
         try{
             Connection con = ConnectionProvider.getCon();
             Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery("select * from gruppenstunde join trainer where gruppenstunde.Datum = '"+Datum+"' and trainer.TrainerID = '"+TrainerID+"'");
+            ResultSet rs = st.executeQuery("select * from gruppenstunde where TrainerID = '"+TrainerID+"'");
             while(rs.next()){
                 checkGruppenstundenID = 1;
                 jTextField1.setEditable(false);
@@ -382,8 +382,8 @@ public class GruppenstundenAktualisieren extends javax.swing.JFrame {
                 jTextField6.setText(rs.getString(6));
                 jTextField9.setText(rs.getString(1));
                 jTextField7.setText(rs.getString(2));
-                jTextField8.setText(rs.getString(1));
-
+                jTextField8.setText(rs.getString(7));
+                jTextField1.setText(rs.getString(1));
             }
             if (checkGruppenstundenID == 0){
                 JOptionPane.showMessageDialog(null, "Eine solche Gruppenstunde existiert nicht");
@@ -412,14 +412,14 @@ public class GruppenstundenAktualisieren extends javax.swing.JFrame {
         String TrainerID = jTextField8.getText();
         try{
             Connection con = ConnectionProvider.getCon();
-            PreparedStatement ps = con.prepareStatement("insert into gruppenstunde values (?,?,?,?,?,?,?)");
-            ps.setString(1, GruppenStundenID);
-            ps.setString(2, Gruppenstundennummer);
-            ps.setString(3, Kapazitat);
-            ps.setString(4, Datum);
-            ps.setString(5, Tag);
-            ps.setString(6, Dauer);
-            ps.setString(7, TrainerID); 
+            PreparedStatement ps = con.prepareStatement("update gruppenstunde set Gruppenstundennummer=?,Kapazitat=?,Datum=?,Tag=?,Dauer=?,TrainerID=? where GruppenStundenID=?");
+            ps.setString(1, Gruppenstundennummer);
+            ps.setString(2, Kapazitat);
+            ps.setString(3, Datum);
+            ps.setString(4, Tag);
+            ps.setString(5, Dauer);
+            ps.setString(6, TrainerID);
+            ps.setString(7, GruppenStundenID);
             ps.executeUpdate();
             JOptionPane.showMessageDialog(null, "Erfolgreich Gespeichert");
             setVisible(false);

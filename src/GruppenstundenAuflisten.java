@@ -75,7 +75,7 @@ public class GruppenstundenAuflisten extends javax.swing.JFrame {
 
             },
             new String [] {
-                "GruppenStdID", "GruppenStdNr", "Kapazitat", "Datum", "Dauer", "Tag", "TrainerID"
+                "GruppenStdID", "GruppenStdNr", "Kapazitat", "Datum", "Tag", "Dauer", "TrainerID"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
@@ -194,7 +194,7 @@ public class GruppenstundenAuflisten extends javax.swing.JFrame {
         try{
             Connection con = ConnectionProvider.getCon();
             Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery("select * from gruppenstunde join trainer where gruppenstunde.TrainerID = trainer.TrainerID and trainer.TrainerID = '"+TrainerID+"'");
+            ResultSet rs = st.executeQuery("select * from gruppenstunde where TrainerID = '"+TrainerID+"'");
             while(rs.next()){
                 checkGruppenstundenID = 1;
                 model.addRow(new Object[]{rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getString(6),rs.getString(7)});

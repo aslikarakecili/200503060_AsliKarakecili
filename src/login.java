@@ -1,5 +1,6 @@
-
+import java.sql.*;
 import javax.swing.JOptionPane;
+import project.ConnectionProvider;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -11,7 +12,10 @@ import javax.swing.JOptionPane;
  * @author lenovo
  */
 public class login extends javax.swing.JFrame {
-
+    Connection con;
+    PreparedStatement pst;
+    ResultSet rs;
+    
     /**
      * Creates new form login
      */
@@ -37,6 +41,8 @@ public class login extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jCheckBox1 = new javax.swing.JCheckBox();
         jLabel3 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocation(new java.awt.Point(175, 100));
@@ -53,12 +59,12 @@ public class login extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Elephant", 1, 48)); // NOI18N
         jLabel1.setText("LOGIN");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 130, 211, 60));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 130, 211, 60));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(204, 0, 51));
         jLabel2.setText("Falscher Nutzername oder Passwort!");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 190, 263, 20));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 190, 263, 20));
 
         jTextField1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jTextField1.setText("Geben Sie den Nutzername ein");
@@ -70,7 +76,7 @@ public class login extends javax.swing.JFrame {
                 jTextField1FocusLost(evt);
             }
         });
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 216, 255, 30));
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 260, 255, 30));
 
         jPasswordField1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jPasswordField1.setText("Geben Sie das Passwort ein");
@@ -82,7 +88,7 @@ public class login extends javax.swing.JFrame {
                 jPasswordField1FocusLost(evt);
             }
         });
-        getContentPane().add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 256, 255, 30));
+        getContentPane().add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 300, 255, 30));
 
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton2.setText("Login");
@@ -91,7 +97,7 @@ public class login extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 350, -1, 30));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 390, -1, 30));
 
         jCheckBox1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jCheckBox1.setText("Passwort zeigen/verstecken");
@@ -100,11 +106,20 @@ public class login extends javax.swing.JFrame {
                 jCheckBox1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 294, 205, 30));
+        getContentPane().add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 330, 205, 30));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/loginbackground.png"))); // NOI18N
         jLabel3.setText("jLabel3");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-60, -20, 1150, 500));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-60, -20, 680, 500));
+
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel5.setText("Nutzertyp :");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 220, -1, -1));
+
+        jComboBox1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Admin", "Trainer", "Sekretar" }));
+        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 220, 150, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -144,7 +159,7 @@ public class login extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        int a = JOptionPane.showConfirmDialog(null, "Sind Sie sicher zum Ausloggen?","Select", JOptionPane.YES_NO_OPTION);
+        int a = JOptionPane.showConfirmDialog(null, "Sind Sie sicher zum Ausgehen?","Select", JOptionPane.YES_NO_OPTION);
         if(a==0){
             System.exit(0);
         }
@@ -152,7 +167,57 @@ public class login extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        if(jTextField1.getText().equals("admin") && jPasswordField1.getText().equals("fitplus")){
+        String Nutzername = jTextField1.getText();
+        String Passwort =  jPasswordField1.getText();
+        String Nutzertyp = (String) jComboBox1.getSelectedItem();
+        try{
+            if(jComboBox1.getSelectedIndex()==1){
+                Connection con = ConnectionProvider.getCon();
+                pst = con.prepareStatement("select Nutzername, Passwort from multiuserlogin where UserID='Admin'"); 
+                rs = pst.executeQuery();
+                while(rs.next()){
+                    if(rs.getString(1).equals(Nutzername) && rs.getString(2).equals(Passwort)){
+                        new home().setVisible(true);
+                    }
+                    else{
+                        jLabel2.setVisible(true);
+                    }
+                }
+            }
+            if(jComboBox1.getSelectedIndex()==2){
+                Connection con = ConnectionProvider.getCon();
+                pst = con.prepareStatement("select Nutzername, Passwort from multiuserlogin where UserID='Trainer'"); 
+                rs = pst.executeQuery();
+                while(rs.next()){
+                    if(rs.getString(1).equals(Nutzername) && rs.getString(2).equals(Passwort)){
+                        new trainerhome().setVisible(true);
+                    }
+                    else{
+                        jLabel2.setVisible(true);
+                    }
+                }
+            } 
+            if(jComboBox1.getSelectedIndex()==3){
+                Connection con = ConnectionProvider.getCon();
+                pst = con.prepareStatement("select Nutzername, Passwort from multiuserlogin where UserID='Sekretar'"); 
+                rs = pst.executeQuery();
+                while(rs.next()){
+                    if(rs.getString(1).equals(Nutzername) && rs.getString(2).equals(Passwort)){
+                        new sekretarhome().setVisible(true);
+                    }
+                    else{
+                        jLabel2.setVisible(true);
+                    }
+                }
+            } 
+        }    
+        catch(Exception e){
+            JOptionPane.showMessageDialog(null, e);
+        }
+        
+        
+        
+        /* if(jTextField1.getText().equals("admin") && jPasswordField1.getText().equals("fitplus")){
             setVisible(false);
             new home().setVisible(true);
         }
@@ -164,7 +229,8 @@ public class login extends javax.swing.JFrame {
         }
         else{
             jLabel2.setVisible(true);
-        }
+        } */
+        
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
@@ -216,9 +282,11 @@ public class login extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JCheckBox jCheckBox1;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables

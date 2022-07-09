@@ -620,7 +620,7 @@ public class SekretarAktualisierenLöschen extends javax.swing.JFrame {
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
-        String SekretarID = jTextField1.getText();
+        String SekretarID = jTextField14.getText();
         String Ausweisnummer = jTextField15.getText();
         String Vorname = jTextField16.getText();
         String Nachname = jTextField17.getText();

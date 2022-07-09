@@ -231,6 +231,11 @@ public class AktualisiereLöscheKunde extends javax.swing.JFrame {
         jLabel16.setText("Bezahlt (0=nein, 1=ja) :");
 
         jTextField15.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jTextField15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField15ActionPerformed(evt);
+            }
+        });
 
         jLabel17.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(255, 102, 102));
@@ -314,7 +319,6 @@ public class AktualisiereLöscheKunde extends javax.swing.JFrame {
                                 .addGap(16, 16, 16)))
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addComponent(jLabel18)
@@ -507,10 +511,11 @@ public class AktualisiereLöscheKunde extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        String KundenID = jTextField1.getText();
+        String KundenID = jTextField18.getText();
         String Ausweisnummer = jTextField2.getText();
         String Vorname = jTextField3.getText();
         String Nachname = jTextField4.getText();
+        String Geschlecht = jTextField12.getText();
         String Age = jTextField5.getText();
         String Lange = jTextField6.getText();
         String Gewicht = jTextField7.getText();
@@ -553,7 +558,7 @@ public class AktualisiereLöscheKunde extends javax.swing.JFrame {
         // TODO add your handling code here:
         int a = JOptionPane.showConfirmDialog(null, "Sind Sie sicher zum Löschen?","Select",JOptionPane.YES_NO_OPTION);
         if(a==0){
-            String KundenID = jTextField1.getText();
+            String KundenID = jTextField18.getText();
             try{
                 Connection con = ConnectionProvider.getCon();
                 Statement st = con.createStatement();
@@ -606,6 +611,10 @@ public class AktualisiereLöscheKunde extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, e);
         }
     }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jTextField15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField15ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField15ActionPerformed
 
     /**
      * @param args the command line arguments
