@@ -332,6 +332,7 @@ public class trainerhome extends javax.swing.JFrame {
         int a = JOptionPane.showConfirmDialog(null,"Sind Sie sicher zum Logout?","Select",JOptionPane.YES_NO_OPTION);
         if(a==0){
             setVisible(false);
+            dispose();
             new login().setVisible(true);
         }
     }//GEN-LAST:event_jLabel12MouseClicked
