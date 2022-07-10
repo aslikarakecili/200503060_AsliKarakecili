@@ -17,49 +17,20 @@ import java.util.Date;
  */
 public class Bezahlungen extends javax.swing.JFrame {
 
-    /* public void tableDetails(){
-        DefaultTableModel dtm = (DefaultTableModel)jTable1.getModel();
-        dtm.setRowCount(0);
-        String KundenID = jTextField1.getText();
-        try{
-            Connection con = ConnectionProvider.getCon();
-            Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery("select * from bezahlung where KundenID='"+KundenID+"'");
-            while (rs.next()){
-                dtm.addRow(new Object[]{rs.getString(2),rs.getString(3)});
-            }
-        }
-        catch(Exception e){
-            JOptionPane.showMessageDialog(null, e);
-        } 
-       
-    }
-    public void date(){
-            SimpleDateFormat dFormat = new SimpleDateFormat("MMM-yyyy");
-            Date date = new Date();
-            String monat = dFormat.format(date);
-            jLabel8.setText(monat);       
-        } */
     /**
      * Creates new form Bezahlungen
      */
     public Bezahlungen() {
         initComponents();
-        //date();
-        /* DefaultTableModel dtm = (DefaultTableModel)jTable1.getModel();
-        dtm.setRowCount(0);
-        String KundenID = jTextField1.getText();
-        try{
-            Connection con = ConnectionProvider.getCon();
-            Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery("select * from kunde where kunde.Bezahlt = 1");
-            while (rs.next()){
-                dtm.addRow(new Object[]{rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(9),rs.getString(13),rs.getString(14)});
-            }
-        }
-        catch(Exception e){
-            JOptionPane.showMessageDialog(null, e);
-        } */
+        jTextField10.setVisible(false);
+        jTextField11.setVisible(false);
+        jTextField12.setVisible(false);
+        jTextField13.setVisible(false);
+        jTextField14.setVisible(false);
+        jTextField15.setVisible(false);
+        jTextField16.setVisible(false);
+        jTextField17.setVisible(false);
+        jTextField18.setVisible(false);
         
     }
 
@@ -97,6 +68,15 @@ public class Bezahlungen extends javax.swing.JFrame {
         jTextField7 = new javax.swing.JTextField();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
+        jTextField10 = new javax.swing.JTextField();
+        jTextField11 = new javax.swing.JTextField();
+        jTextField12 = new javax.swing.JTextField();
+        jTextField13 = new javax.swing.JTextField();
+        jTextField14 = new javax.swing.JTextField();
+        jTextField15 = new javax.swing.JTextField();
+        jTextField16 = new javax.swing.JTextField();
+        jTextField17 = new javax.swing.JTextField();
+        jTextField18 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocation(new java.awt.Point(175, 100));
@@ -209,16 +189,28 @@ public class Bezahlungen extends javax.swing.JFrame {
             }
         });
 
+        jTextField10.setText("jTextField10");
+
+        jTextField11.setText("jTextField11");
+
+        jTextField12.setText("jTextField12");
+
+        jTextField13.setText("jTextField13");
+
+        jTextField14.setText("jTextField14");
+
+        jTextField15.setText("jTextField15");
+
+        jTextField16.setText("jTextField16");
+
+        jTextField17.setText("jTextField17");
+
+        jTextField18.setText("jTextField18");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 428, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 496, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(43, 43, 43))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(86, 86, 86)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -256,7 +248,7 @@ public class Bezahlungen extends javax.swing.JFrame {
                         .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jButton2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -267,14 +259,50 @@ public class Bezahlungen extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(jButton5)
                         .addGap(92, 92, 92))))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(41, 41, 41)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(28, 28, 28)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(34, 34, 34)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 496, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(43, 43, 43))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(16, 16, 16)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel1)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(45, 45, 45)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -296,7 +324,12 @@ public class Bezahlungen extends javax.swing.JFrame {
                         .addComponent(jButton5)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(70, 70, 70)
+                        .addGap(8, 8, 8)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(40, 40, 40)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -346,99 +379,115 @@ public class Bezahlungen extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         setVisible(false);
+        dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         //tableDetails();
-        int checkKundenID= 0;
-        String KundenID = jTextField1.getText();
-        try{
-            Connection con = ConnectionProvider.getCon();
-            Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery("select * from kunde where KundenID='"+KundenID+"'");
-            while(rs.next()){
-                checkKundenID = 1;
-                jTextField6.setEditable(false);
+        // int checkKundenID= 0;
+            String KundenID = jTextField1.getText();
+
+            Kunde kunde = Database.searchKundenID(KundenID);
+            if (kunde != null) {
                 jTextField2.setEditable(false);
                 jTextField3.setEditable(false);
+                jTextField6.setEditable(false);
+                jTextField14.setEditable(false);
                 jTextField4.setEditable(false);
-                jTextField6.setText(rs.getString(1));
-                jTextField2.setText(rs.getString(3));
-                jTextField3.setText(rs.getString(4));
-                jTextField4.setText(rs.getString(9));
-                jTextField5.setText(rs.getString(13));
-                jTextField7.setText(rs.getString(14));
-            }
-            if(checkKundenID==0){
-                JOptionPane.showMessageDialog(null, "Eine solche KundenID existiert nicht");
-            }
 
-        }
-        catch(Exception e){
-            JOptionPane.showMessageDialog(null, e);
-        }
+
+                jTextField6.setText("" + kunde.getKundenID());
+                jTextField10.setText(kunde.getAusweis());
+                jTextField2.setText(kunde.getVorname());
+                jTextField3.setText(kunde.getNachname());
+                jTextField11.setText(kunde.getGeschlecht());
+                jTextField12.setText("" + kunde.getAge());
+                jTextField13.setText("" + kunde.getLange());
+                jTextField14.setText("" + kunde.getGewicht());
+                jTextField4.setText(kunde.getTelefonnummer());
+                jTextField15.setText(kunde.getZweck());
+                jTextField16.setText(kunde.getDiatprogramm());
+                jTextField17.setText(kunde.getSportprogramm());;
+                jTextField5.setText("" + kunde.getRechnung());
+                jTextField7.setText("" + kunde.isBezahlt());
+                jTextField18.setText(kunde.getGruppenstundenum());
+            } else {
+                setVisible(false);
+                dispose();
+                new Bezahlungen().setVisible(true);
+            }
+            
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
-        //tableDetails();
-        int checkKundenID = 0;
-        String Vorname = jTextField8.getText();
+        
         String Nachname = jTextField9.getText();
-        try{
-            Connection con = ConnectionProvider.getCon();
-            Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery("select * from kunde where Vorname='"+Vorname+"' and Nachname='"+Nachname+"'");
-            while(rs.next()){
-                checkKundenID = 1;
-                jTextField6.setEditable(false);
+        String Vorname = jTextField8.getText();
+        Kunde kunde = Database.searchKundeName(Vorname, Nachname);
+        if (kunde != null) {
                 jTextField2.setEditable(false);
                 jTextField3.setEditable(false);
+                jTextField6.setEditable(false);
+                jTextField14.setEditable(false);
                 jTextField4.setEditable(false);
-                jTextField6.setText(rs.getString(1));
-                jTextField2.setText(rs.getString(3));
-                jTextField3.setText(rs.getString(4));
-                jTextField4.setText(rs.getString(9));
-                jTextField5.setText(rs.getString(13));
-                jTextField7.setText(rs.getString(14
-                ));
-            }
-            if(checkKundenID==0){
-                JOptionPane.showMessageDialog(null, "Eine solche Kundenname existiert nicht");
-            }
 
+                jTextField6.setText("" + kunde.getKundenID());
+                jTextField10.setText(kunde.getAusweis());
+                jTextField2.setText(kunde.getVorname());
+                jTextField3.setText(kunde.getNachname());
+                jTextField11.setText(kunde.getGeschlecht());
+                jTextField12.setText("" + kunde.getAge());
+                jTextField13.setText("" + kunde.getLange());
+                jTextField14.setText("" + kunde.getGewicht());
+                jTextField4.setText(kunde.getTelefonnummer());
+                jTextField15.setText(kunde.getZweck());
+                jTextField16.setText(kunde.getDiatprogramm());
+                jTextField17.setText(kunde.getSportprogramm());;
+                jTextField5.setText("" + kunde.getRechnung());
+                jTextField7.setText("" + kunde.isBezahlt());
+                jTextField18.setText(kunde.getGruppenstundenum());
         }
-        catch(Exception e){
-            JOptionPane.showMessageDialog(null, e);
+        else {
+            setVisible(false);
+            dispose();
+            new Bezahlungen().setVisible(true);
         }
+        
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        String KundenID = jTextField6.getText();
-        String Rechnung = jTextField5.getText();
-        String Bezahlt = jTextField7.getText();
+        int KundenID = Integer.parseInt(jTextField6.getText());
+        String Ausweis = jTextField10.getText();
+        String Vorname = jTextField2.getText();
+        String Nachname = jTextField13.getText();
+        String Geschlecht = jTextField11.getText();
+        int Age = Integer.parseInt(jTextField12.getText());
+        int Lange = Integer.parseInt(jTextField13.getText());
+        int Gewicht = Integer.parseInt(jTextField14.getText());
+        String Telefonnummer = jTextField4.getText();
+        String Zweck = jTextField15.getText();
+        String Diatprogramm = jTextField16.getText();
+        String Sportprogramm = jTextField17.getText();
+        float Rechnung = Float.parseFloat(jTextField5.getText());
+        boolean Bezahlt = Boolean.parseBoolean(jTextField7.getText());
+        String Gruppenstundenum = jTextField18.getText();
+        
         try{
-            Connection con = ConnectionProvider.getCon();
-            PreparedStatement ps = con.prepareStatement("update kunde set Rechnung=?,Bezahlt=? where KundenID='"+KundenID+"'");
-            ps.setString(1, Rechnung);
-            ps.setString(2, Bezahlt);
-            ps.executeUpdate();
-            //tableDetails();
-            JOptionPane.showMessageDialog(null, "Erfolgreich Aktualisiert");
-            setVisible(false);
+            Database.updateKunde(new Kunde(KundenID, Ausweis, Vorname, Nachname, Geschlecht, Age, Lange, Gewicht, Telefonnummer, Zweck, Diatprogramm, Sportprogramm, Rechnung, Bezahlt, Gruppenstundenum));
             new Bezahlungen().setVisible(true);
-
         }
         catch(Exception e){
-            JOptionPane.showMessageDialog(null, e);
+            e.printStackTrace();
         }
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
         setVisible(false);
+        dispose();
         new Bezahlungen().setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
 
@@ -495,6 +544,15 @@ public class Bezahlungen extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField10;
+    private javax.swing.JTextField jTextField11;
+    private javax.swing.JTextField jTextField12;
+    private javax.swing.JTextField jTextField13;
+    private javax.swing.JTextField jTextField14;
+    private javax.swing.JTextField jTextField15;
+    private javax.swing.JTextField jTextField16;
+    private javax.swing.JTextField jTextField17;
+    private javax.swing.JTextField jTextField18;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;

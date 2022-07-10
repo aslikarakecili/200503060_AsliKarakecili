@@ -22,19 +22,13 @@ public class NeuerKundeHinzufügen extends javax.swing.JFrame {
             int KundenID = 1;
             String str1 = String.valueOf(KundenID);
             jLabel3.setText(str1);
-            Connection con = ConnectionProvider.getCon();
-            Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery("select max(KundenID) from kunde");
-            while (rs.next()){
-                KundenID = rs.getInt(1);
-                KundenID = KundenID+1;
-                String str = String.valueOf(KundenID);
-                jLabel3.setText(str);   
-            }
-            
+            KundenID = Database.maxKundenID();
+            String str = String.valueOf(KundenID);
+            jLabel3.setText(str);
+  
         }
         catch(Exception e){
-            JOptionPane.showMessageDialog(null, e);
+           e.printStackTrace();
         }
         
     }
@@ -403,52 +397,33 @@ public class NeuerKundeHinzufügen extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
         setVisible(false);
+        dispose();
         new NeuerKundeHinzufügen().setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        String KundenID = jLabel3.getText();
+        int KundenID = Integer.parseInt(jLabel3.getText());
         String Ausweis = jTextField1.getText();
         String Vorname = jTextField2.getText();
         String Nachname = jTextField9.getText();
         String Geschlecht = (String) jComboBox1.getSelectedItem();
-        String Age = jTextField3.getText();
-        String Lange = jTextField4.getText();
-        String Gewicht = jTextField5.getText();
+        int Age = Integer.parseInt(jTextField3.getText());
+        int Lange = Integer.parseInt(jTextField4.getText());
+        int Gewicht = Integer.parseInt(jTextField5.getText());
         String Telefonnummer = jTextField6.getText();
         String Zweck = (String) jComboBox2.getSelectedItem();
         String Diatprogramm = jTextField12.getText();
         String Sportprogramm = jTextField8.getText();
-        String Rechnung = jTextField7.getText();
-        String Bezahlt = jTextField10.getText();
-        String Gruppenstundenum = jTextField11.getText();
-        try{
-            Connection con = ConnectionProvider.getCon();
-            PreparedStatement ps = con.prepareStatement("insert into kunde values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
-            ps.setString(1, KundenID);
-            ps.setString(2, Ausweis);
-            ps.setString(3, Vorname);
-            ps.setString(4, Nachname);
-            ps.setString(5, Geschlecht);
-            ps.setString(6, Age);
-            ps.setString(7, Lange);
-            ps.setString(8, Gewicht);
-            ps.setString(9, Telefonnummer);
-            ps.setString(10, Zweck);
-            ps.setString(11, Diatprogramm);
-            ps.setString(12, Sportprogramm);
-            ps.setString(13, Rechnung);
-            ps.setString(14, Bezahlt);
-            ps.setString(15, Gruppenstundenum);
-            ps.executeUpdate();
-            JOptionPane.showMessageDialog(null, "Erfolgreich Gespeichert");
-            setVisible(false);
-            new NeuerKundeHinzufügen().setVisible(true);
-        }
-        catch(Exception e){
-            JOptionPane.showMessageDialog(null, e);
-        }
+        float Rechnung = Float.parseFloat(jTextField11.getText());
+        boolean Bezahlt = Boolean.parseBoolean(jTextField7.getText());
+        String Gruppenstundenum = jTextField10.getText();
+        
+        Database.addKunde(new Kunde(KundenID, Ausweis, Vorname, Nachname, Geschlecht, Age, Lange, Gewicht, Telefonnummer, Zweck, Diatprogramm, Sportprogramm, Rechnung, Bezahlt, Gruppenstundenum));
+        setVisible(false);
+        dispose();
+        new NeuerKundeHinzufügen().setVisible(true);
+        
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jTextField11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField11ActionPerformed

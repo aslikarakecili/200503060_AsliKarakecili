@@ -11,7 +11,7 @@ import project.ConnectionProvider;
  * @author lenovo
  */
 public class SekretarAktualisierenLöschen extends javax.swing.JFrame {
-
+        
     /**
      * Creates new form SekretarAktualisierenLöschen
      */
@@ -490,126 +490,75 @@ public class SekretarAktualisierenLöschen extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-        int checkSekretarID = 0;
-        String Nachname = jTextField3.getText();
-        String Vorname = jTextField2.getText();
-        try{
-            Connection con = ConnectionProvider.getCon();
-            Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery("select * from sekretar where Vorname = '"+Vorname+"' and Nachname = '"+Nachname+"'");
-            while(rs.next()){
-                checkSekretarID = 1;
-                jTextField1.setEditable(false);
-                jTextField14.setEditable(false);
-                jTextField14.setText(rs.getString(1));
-                jTextField15.setText(rs.getString(2));
-                jTextField16.setText(rs.getString(3));
-                jTextField17.setText(rs.getString(4));
-                jTextField18.setText(rs.getString(5));
-                jTextField19.setText(rs.getString(6));
-                jTextField20.setText(rs.getString(7));
-                jTextField21.setText(rs.getString(8));
-                jTextField22.setText(rs.getString(9));
-                jTextField23.setText(rs.getString(10));
-            }
-            if (checkSekretarID == 0){
-                JOptionPane.showMessageDialog(null, "Eine solche Sekretar existiert nicht");
-            }
-
-        }
-        catch(Exception e){
-            JOptionPane.showMessageDialog(null, e);
-        }
+                // TODO add your handling code here:
+                // int checkSekretarID = 0;
+                String Nachname = jTextField3.getText();
+                String Vorname = jTextField2.getText();
+        
+                Sekretar sekretar = Database.searchSekretarName(Vorname, Nachname);
+                if (sekretar != null){
+                    jTextField14.setText("" + sekretar.getSekretarID());
+                    jTextField15.setText(sekretar.getAusweis());
+                    jTextField16.setText(sekretar.getVorname());
+                    jTextField17.setText(sekretar.getNachname());
+                    jTextField18.setText(sekretar.getGeschlecht());
+                    jTextField19.setText("" +sekretar.getAge());
+                    jTextField20.setText(sekretar.getTelefonnummer());
+                    jTextField21.setText(sekretar.getAdresse());
+                    jTextField22.setText("" + sekretar.getGehalt());
+                    jTextField23.setText("" + sekretar.isGenommen());
+                } else {
+                    setVisible(false);
+                    dispose();
+                    new SekretarAktualisierenLöschen().setVisible(true);
+                } 
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        int checkSekretarID = 0;
         String SekretarID = jTextField1.getText();
-        try{
-            Connection con = ConnectionProvider.getCon();
-            Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery("select * from sekretar where SekretarID = '"+SekretarID+"'");
-            while(rs.next()){
-                checkSekretarID = 1;
-                jTextField1.setEditable(false);
-                jTextField14.setEditable(false);
-                jTextField14.setText(rs.getString(1));
-                jTextField15.setText(rs.getString(2));
-                jTextField16.setText(rs.getString(3));
-                jTextField17.setText(rs.getString(4));
-                jTextField18.setText(rs.getString(5));
-                jTextField19.setText(rs.getString(6));
-                jTextField20.setText(rs.getString(7));
-                jTextField21.setText(rs.getString(8));
-                jTextField22.setText(rs.getString(9));
-                jTextField23.setText(rs.getString(10));
-
-            }
-            if (checkSekretarID == 0){
-                JOptionPane.showMessageDialog(null, "Ein solcher Sekretar existiert nicht");
-            }
-
-        }
-        catch(Exception e){
-            e.printStackTrace();
-        }
+        
+        Sekretar sekretar = Database.searchSekretarID(SekretarID);
+                if (sekretar != null){
+                    jTextField1.setEditable(false);
+                    jTextField14.setEditable(false);
+                    jTextField14.setText("" + sekretar.getSekretarID());
+                    jTextField15.setText(sekretar.getAusweis());
+                    jTextField16.setText(sekretar.getVorname());
+                    jTextField17.setText(sekretar.getNachname());
+                    jTextField18.setText(sekretar.getGeschlecht());
+                    jTextField19.setText("" +sekretar.getAge());
+                    jTextField20.setText(sekretar.getTelefonnummer());
+                    jTextField21.setText(sekretar.getAdresse());
+                    jTextField22.setText("" + sekretar.getGehalt());
+                    jTextField23.setText("" + sekretar.isGenommen());
+                } else {
+                    setVisible(false);
+                    dispose();
+                new SekretarAktualisierenLöschen().setVisible(true);
+                }    
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
-        String SekretarID = jTextField1.getText();
-        String Ausweisnummer = jTextField15.getText();
+        int SekretarID = Integer.parseInt(jTextField1.getText());
+        String Ausweis = jTextField15.getText();
         String Vorname = jTextField16.getText();
         String Nachname = jTextField17.getText();
         String Geschlecht = jTextField18.getText();
-        String Age = jTextField19.getText();
+        int Age = Integer.parseInt(jTextField9.getText());
         String Telefonnummer = jTextField20.getText();
         String Adresse = jTextField21.getText();
-        String Gehalt = jTextField22.getText();
-        String Genommen = jTextField23.getText();
-        try{
-            Connection con = ConnectionProvider.getCon();
-            PreparedStatement ps = con.prepareStatement("update sekretar set Ausweis=?,Vorname=?,Nachname=?,Geschlecht=?,Age=?,Telefonnummer=?,Adresse=?,Gehalt=?,Genommen=? where SekretarID=?");
-            ps.setString(1, Ausweisnummer);
-            ps.setString(2, Vorname);
-            ps.setString(3, Nachname);
-            ps.setString(4, Geschlecht);
-            ps.setString(5, Age);
-            ps.setString(6, Telefonnummer);
-            ps.setString(7, Adresse);
-            ps.setString(8, Gehalt);
-            ps.setString(9, Genommen);
-            ps.setString(10, SekretarID);
-            ps.executeUpdate();
-            JOptionPane.showMessageDialog(null, "Erfolgreich Aktualisiert");
-            setVisible(false);
-            new TrainerAktualisierenLöschen().setVisible(true);
-        }
-        catch(Exception e){
-            e.printStackTrace();
-            // JOptionPane.showMessageDialog(null, e);
-        }
+        float Gehalt = Float.parseFloat(jTextField22.getText());
+        boolean Genommen = Boolean.parseBoolean(jTextField23.getText());
+        
+        
+        Database.updateSekretar(new Sekretar(SekretarID, Ausweis, Vorname, Nachname, Geschlecht, Age, Telefonnummer, Adresse, Gehalt, Genommen));
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
-        int a = JOptionPane.showConfirmDialog(null, "Sind Sie sicher zum Löschen?","Select",JOptionPane.YES_NO_OPTION);
-        if(a==0){
-            String SekretarID = jTextField1.getText();
-            try{
-                Connection con = ConnectionProvider.getCon();
-                Statement st = con.createStatement();
-                st.executeUpdate("delete from sekretar where SekretarID='"+SekretarID+"'");
-                JOptionPane.showMessageDialog(null, "Erfolgreich Gelöscht");
-                setVisible(false);
-                new TrainerAktualisierenLöschen().setVisible(true);
-            }
-            catch(Exception e){
-                JOptionPane.showMessageDialog(null, e);
-            }
-        }
+        
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
@@ -620,38 +569,25 @@ public class SekretarAktualisierenLöschen extends javax.swing.JFrame {
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
-        String SekretarID = jTextField14.getText();
-        String Ausweisnummer = jTextField15.getText();
+        int SekretarID = Integer.parseInt(jTextField14.getText());
+        String Ausweis = jTextField15.getText();
         String Vorname = jTextField16.getText();
         String Nachname = jTextField17.getText();
         String Geschlecht = jTextField18.getText();
-        String Age = jTextField19.getText();
+        int Age = Integer.parseInt(jTextField19.getText());
         String Telefonnummer = jTextField20.getText();
         String Adresse = jTextField21.getText();
-        String Gehalt = jTextField22.getText();
-        String Genommen = jTextField23.getText();
+        float Gehalt = Float.parseFloat(jTextField22.getText());
+        boolean Genommen = Boolean.parseBoolean(jTextField23.getText());
+        
         try{
-            Connection con = ConnectionProvider.getCon();
-            PreparedStatement ps = con.prepareStatement("update sekretar set Ausweis=?,Vorname=?,Nachname=?,Geschlecht=?,Age=?,Telefonnummer=?,Adresse=?,Gehalt=?,Genommen=? where SekretarID=?");
-            ps.setString(1, Ausweisnummer);
-            ps.setString(2, Vorname);
-            ps.setString(3, Nachname);
-            ps.setString(4, Geschlecht);
-            ps.setString(5, Age);
-            ps.setString(6, Telefonnummer);
-            ps.setString(7, Adresse);
-            ps.setString(8, Gehalt);
-            ps.setString(9, Genommen);
-            ps.setString(10, SekretarID);
-            ps.executeUpdate();
-            JOptionPane.showMessageDialog(null, "Erfolgreich Aktualisiert");
-            setVisible(false);
+            Database.updateSekretar(new Sekretar(SekretarID, Ausweis, Vorname, Nachname, Geschlecht, Age, Telefonnummer, Adresse, Gehalt, Genommen));
             new SekretarAktualisierenLöschen().setVisible(true);
         }
         catch(Exception e){
             e.printStackTrace();
-            // JOptionPane.showMessageDialog(null, e);
         }
+        
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
@@ -659,29 +595,27 @@ public class SekretarAktualisierenLöschen extends javax.swing.JFrame {
         int a = JOptionPane.showConfirmDialog(null, "Sind Sie sicher zum Löschen?","Select",JOptionPane.YES_NO_OPTION);
         if(a==0){
             String SekretarID = jTextField1.getText();
-            try{
-                Connection con = ConnectionProvider.getCon();
-                Statement st = con.createStatement();
-                st.executeUpdate("delete from sekretar where SekretarID='"+SekretarID+"'");
-                JOptionPane.showMessageDialog(null, "Erfolgreich Gelöscht");
-                setVisible(false);
-                new SekretarAktualisierenLöschen().setVisible(true);
-            }
-            catch(Exception e){
-                JOptionPane.showMessageDialog(null, e);
-            }
+           
+            Database.deleteSekretar(SekretarID);
+            setVisible(false);
+            dispose();
+            new SekretarAktualisierenLöschen().setVisible(true);
         }
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         // TODO add your handling code here:
-        setVisible(false);
-        new SekretarAktualisierenLöschen().setVisible(true);
+                setVisible(true);
+                dispose();
+                new SekretarAktualisierenLöschen().setVisible(true);
+              
+           
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         setVisible(false);
+        dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

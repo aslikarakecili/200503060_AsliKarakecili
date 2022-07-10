@@ -1,3 +1,4 @@
+import java.nio.file.Files;
 import java.sql.*;
 import javax.swing.JOptionPane;
 import project.ConnectionProvider;
@@ -21,16 +22,10 @@ public class DiatprogrammeErstellen extends javax.swing.JFrame {
             int DiatID = 1;
             String str1 = String.valueOf(DiatID);
             jLabel12.setText(str1);
-            Connection con = ConnectionProvider.getCon();
-            Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery("select max(DiatID) from diatprogramm");
-            while (rs.next()){
-                DiatID = rs.getInt(1);
-                DiatID = DiatID+1;
-                String str = String.valueOf(DiatID);
-                jLabel12.setText(str);   
-            }
-            
+            DiatID = Database.maxDiatID();
+            String str = String.valueOf(DiatID);
+            jLabel12.setText(str);
+  
         }
         catch(Exception e){
            e.printStackTrace();
@@ -216,37 +211,27 @@ public class DiatprogrammeErstellen extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         setVisible(false);
+        dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        String DiatID = jLabel12.getText();
+        int DiatID = Integer.parseInt(jLabel12.getText());
         String Diatname = jTextField2.getText();
         String Tage = jTextField3.getText();
         String Nahrungen = jTextField4.getText();
         String Uhrzeiten = jTextField5.getText();
 
-        try{
-            Connection con = ConnectionProvider.getCon();
-            PreparedStatement ps = con.prepareStatement("insert into diatprogramm values (?,?,?,?,?)");
-            ps.setString(1, DiatID);
-            ps.setString(2, Diatname);
-            ps.setString(3, Tage);
-            ps.setString(4, Nahrungen);
-            ps.setString(5, Uhrzeiten);
-            ps.executeUpdate();
-            JOptionPane.showMessageDialog(null, "Erfolgreich Gespeichert");
-            setVisible(false);
-            new DiatprogrammeErstellen().setVisible(true);
-        }
-        catch(Exception e){
-            e.printStackTrace();
-        }
+        Database.addDiatprogramm(new Diatprogramm(DiatID, Diatname, Tage, Nahrungen, Uhrzeiten));
+        setVisible(false);
+        dispose();
+        new DiatprogrammeErstellen().setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
         setVisible(false);
+        dispose();
         new DiatprogrammeErstellen().setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
 

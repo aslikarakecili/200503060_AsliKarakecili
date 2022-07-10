@@ -64,6 +64,11 @@ public class GruppenstundenAuflisten extends javax.swing.JFrame {
                 jButton4MouseClicked(evt);
             }
         });
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         jLabel1.setFont(new java.awt.Font("Elephant", 1, 39)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 204, 102));
@@ -178,59 +183,52 @@ public class GruppenstundenAuflisten extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         setVisible(false);
+        dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
         // TODO add your handling code here:
-        setVisible(false);
-        new GruppenstundenAuflisten().setVisible(true);
+        
     }//GEN-LAST:event_jButton4MouseClicked
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        int checkGruppenstundenID = 0;
+        // int checkGruppenstundenID = 0;
         DefaultTableModel model = (DefaultTableModel)jTable1.getModel();
-        String TrainerID = jTextField1.getText();
-        try{
-            Connection con = ConnectionProvider.getCon();
-            Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery("select * from gruppenstunde where TrainerID = '"+TrainerID+"'");
-            while(rs.next()){
-                checkGruppenstundenID = 1;
-                model.addRow(new Object[]{rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getString(6),rs.getString(7)});
+        int TrainerID = Integer.parseInt(jTextField1.getText());
+            try{
+            ResultSet rs = Database.getDataGruppenstundeFilterTrainerID(TrainerID);
+                while(rs.next()){
+                    model.addRow(new Object[]{rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getString(6),rs.getString(7)});
+                }
             }
-            if (checkGruppenstundenID == 0){
-                JOptionPane.showMessageDialog(null, "Eine solche Gruppenstunde existiert nicht");
+            catch(Exception e){
+                JOptionPane.showMessageDialog(null, e);
             }
 
-        }
-        catch(Exception e){
-            JOptionPane.showMessageDialog(null, e);
-        }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
         // TODO add your handling code here:
-        int checkGruppenstundenID = 0;
         DefaultTableModel model = (DefaultTableModel)jTable1.getModel();
-        String TrainerID = jTextField1.getText();
+
         try{
-            Connection con = ConnectionProvider.getCon();
-            Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery("select * from gruppenstunde");
+            ResultSet rs = Database.getDataGruppenstunde();
             while(rs.next()){
-                checkGruppenstundenID = 1;
                 model.addRow(new Object[]{rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getString(6),rs.getString(7)});
             }
-            if (checkGruppenstundenID == 0){
-                JOptionPane.showMessageDialog(null, "Eine solche Gruppenstunde existiert nicht");
-            }
-
         }
         catch(Exception e){
             JOptionPane.showMessageDialog(null, e);
         }
     }//GEN-LAST:event_jButton3MouseClicked
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        setVisible(false);
+        dispose();
+        new GruppenstundenAuflisten().setVisible(true);
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments

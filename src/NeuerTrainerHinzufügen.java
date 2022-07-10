@@ -23,20 +23,13 @@ public class NeuerTrainerHinzufügen extends javax.swing.JFrame {
             int TrainerID = 1;
             String str1 = String.valueOf(TrainerID);
             jLabel12.setText(str1);
-            Connection con = ConnectionProvider.getCon();
-            Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery("select max(TrainerID) from trainer");
-            while (rs.next()){
-                TrainerID = rs.getInt(1);
-                TrainerID = TrainerID+1;
-                String str = String.valueOf(TrainerID);
-                jLabel12.setText(str);
-                
-            }
-            
+            TrainerID = Database.maxSekretarID();
+            String str = String.valueOf(TrainerID);
+            jLabel12.setText(str);
+  
         }
         catch(Exception e){
-           JOptionPane.showMessageDialog(null, e);
+           e.printStackTrace();
         }
     }
 
@@ -309,45 +302,32 @@ public class NeuerTrainerHinzufügen extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         setVisible(false);
+        dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        String TrainerID = jLabel12.getText();
+        int TrainerID = Integer.parseInt(jLabel12.getText());
         String Ausweis = jTextField2.getText();
         String Vorname = jTextField3.getText();
         String Nachname = jTextField4.getText();
         String Geschlecht = (String) jComboBox1.getSelectedItem();
-        String Age = jTextField5.getText();
+        int Age = Integer.parseInt(jTextField5.getText());
         String Telefonnummer = jTextField6.getText();
         String Adresse = jTextField7.getText();
-        String Gehalt = jTextField8.getText();
-        String Genommen = jTextField9.getText();
-        try{
-            Connection con = ConnectionProvider.getCon();
-            PreparedStatement ps = con.prepareStatement("insert into trainer values (?,?,?,?,?,?,?,?,?,?)");
-            ps.setString(1, TrainerID);
-            ps.setString(2, Ausweis);
-            ps.setString(3, Vorname);
-            ps.setString(4, Nachname);
-            ps.setString(5, Geschlecht);
-            ps.setString(6, Age);
-            ps.setString(7, Telefonnummer);
-            ps.setString(8, Adresse);
-            ps.setString(9, Gehalt);
-            ps.setString(10, Genommen);
-            ps.executeUpdate();
-            JOptionPane.showMessageDialog(null, "Erfolgreich Gespeichert");
-            setVisible(false);
-            new NeuerTrainerHinzufügen().setVisible(true);
-        }
-        catch(Exception e){
-            JOptionPane.showMessageDialog(null, e);        }
+        float Gehalt = Float.parseFloat(jTextField8.getText());
+        boolean Genommen = Boolean.parseBoolean(jTextField9.getText());
+        
+        Database.addTrainer(new Trainer(TrainerID, Ausweis, Vorname, Nachname, Geschlecht, Age, Telefonnummer, Adresse, Gehalt, Genommen));
+        setVisible(false);
+        dispose();
+        new NeuerTrainerHinzufügen().setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
         setVisible(false);
+        dispose();
         new NeuerTrainerHinzufügen().setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
 

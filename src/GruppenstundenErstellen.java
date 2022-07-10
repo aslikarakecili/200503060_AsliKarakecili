@@ -18,19 +18,13 @@ public class GruppenstundenErstellen extends javax.swing.JFrame {
     public GruppenstundenErstellen() {
         initComponents();
         try{
-            int GruppenStundenID = 1;
-            String str1 = String.valueOf(GruppenStundenID);
+            int GruppenstundenID = 1;
+            String str1 = String.valueOf(GruppenstundenID);
             jLabel12.setText(str1);
-            Connection con = ConnectionProvider.getCon();
-            Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery("select max(GruppenStundenID) from gruppenstunde");
-            while (rs.next()){
-                GruppenStundenID = rs.getInt(1);
-                GruppenStundenID = GruppenStundenID+1;
-                String str = String.valueOf(GruppenStundenID);
-                jLabel12.setText(str);   
-            }
-            
+            GruppenstundenID = Database.maxGruppenstundenID();
+            String str = String.valueOf(GruppenstundenID);
+            jLabel12.setText(str);
+  
         }
         catch(Exception e){
            e.printStackTrace();
@@ -244,42 +238,31 @@ public class GruppenstundenErstellen extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        String GruppenStundenID = jLabel12.getText();
-        String Gruppenstundennummer = jTextField6.getText();
-        String Kapazitat = jTextField2.getText();
+        int GruppenstundenID = Integer.parseInt(jLabel12.getText());
+        int Gruppenstundennummer = Integer.parseInt(jTextField6.getText());
+        int Kapazitat = Integer.parseInt(jTextField2.getText());
         String Datum = jTextField3.getText();
         String Tag = jTextField4.getText();
-        String Dauer = jTextField5.getText();
-        String TrainerID = jTextField1.getText();
-        try{
-            Connection con = ConnectionProvider.getCon();
-            PreparedStatement ps = con.prepareStatement("insert into gruppenstunde values (?,?,?,?,?,?,?)");
-            ps.setString(1, GruppenStundenID);
-            ps.setString(2, Gruppenstundennummer);
-            ps.setString(3, Kapazitat);
-            ps.setString(4, Datum);
-            ps.setString(5, Tag);
-            ps.setString(6, Dauer);
-            ps.setString(7, TrainerID);
-            ps.executeUpdate();
-            JOptionPane.showMessageDialog(null, "Erfolgreich Gespeichert");
-            setVisible(false);
-            new GruppenstundenErstellen().setVisible(true);
-        }
-        catch(Exception e){
-            e.printStackTrace();
-        }
+        int Dauer = Integer.parseInt(jTextField5.getText());
+        int TrainerID = Integer.parseInt(jTextField1.getText());
+
+        Database.addGruppenstunde(new Gruppenstunde(GruppenstundenID, Gruppenstundennummer, Kapazitat, Datum, Tag, Dauer, TrainerID));
+        setVisible(false);
+        dispose();
+        new GruppenstundenErstellen().setVisible(true);;
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
         setVisible(false);
+        dispose();
         new GruppenstundenErstellen().setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         setVisible(false);
+        dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

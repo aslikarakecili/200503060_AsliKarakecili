@@ -12,9 +12,9 @@ import project.ConnectionProvider;
  * @author lenovo
  */
 public class login extends javax.swing.JFrame {
-    Connection con;
+    /* Connection con;
     PreparedStatement pst;
-    ResultSet rs;
+    ResultSet rs; */
     
     /**
      * Creates new form login
@@ -172,9 +172,7 @@ public class login extends javax.swing.JFrame {
         String Nutzertyp = (String) jComboBox1.getSelectedItem();
         try{
             if(jComboBox1.getSelectedIndex()==1){
-                Connection con = ConnectionProvider.getCon();
-                pst = con.prepareStatement("select Nutzername, Passwort from multiuserlogin where UserID='Admin'"); 
-                rs = pst.executeQuery();
+                ResultSet rs = Database.getDataMultiuserloginAdmin();
                 while(rs.next()){
                     if(rs.getString(1).equals(Nutzername) && rs.getString(2).equals(Passwort)){
                         new home().setVisible(true);
@@ -185,9 +183,7 @@ public class login extends javax.swing.JFrame {
                 }
             }
             if(jComboBox1.getSelectedIndex()==2){
-                Connection con = ConnectionProvider.getCon();
-                pst = con.prepareStatement("select Nutzername, Passwort from multiuserlogin where UserID='Trainer'"); 
-                rs = pst.executeQuery();
+                ResultSet rs = Database.getDataMultiuserloginTrainer();
                 while(rs.next()){
                     if(rs.getString(1).equals(Nutzername) && rs.getString(2).equals(Passwort)){
                         new trainerhome().setVisible(true);
@@ -198,9 +194,7 @@ public class login extends javax.swing.JFrame {
                 }
             } 
             if(jComboBox1.getSelectedIndex()==3){
-                Connection con = ConnectionProvider.getCon();
-                pst = con.prepareStatement("select Nutzername, Passwort from multiuserlogin where UserID='Sekretar'"); 
-                rs = pst.executeQuery();
+                ResultSet rs = Database.getDataMultiuserloginSekretar();
                 while(rs.next()){
                     if(rs.getString(1).equals(Nutzername) && rs.getString(2).equals(Passwort)){
                         new sekretarhome().setVisible(true);
@@ -214,23 +208,7 @@ public class login extends javax.swing.JFrame {
         catch(Exception e){
             JOptionPane.showMessageDialog(null, e);
         }
-        
-        
-        
-        /* if(jTextField1.getText().equals("admin") && jPasswordField1.getText().equals("fitplus")){
-            setVisible(false);
-            new home().setVisible(true);
-        }
-        else if (jTextField1.getText().equals("trainer") && jPasswordField1.getText().equals("fitplus")){
-            new trainerhome().setVisible(true);
-        }
-        else if (jTextField1.getText().equals("sekretar") && jPasswordField1.getText().equals("fitplus")){
-            new sekretarhome().setVisible(true);
-        }
-        else{
-            jLabel2.setVisible(true);
-        } */
-        
+ 
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed

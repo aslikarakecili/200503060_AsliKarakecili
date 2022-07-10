@@ -1,6 +1,6 @@
 import java.sql.*;
 import javax.swing.JOptionPane;
-import project.ConnectionProvider;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -21,22 +21,15 @@ public class NeuerSekretarHinzufügen extends javax.swing.JFrame {
             int SekretarID = 1;
             String str1 = String.valueOf(SekretarID);
             jLabel3.setText(str1);
-            Connection con = ConnectionProvider.getCon();
-            Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery("select max(SekretarID) from sekretar");
-            while (rs.next()){
-                SekretarID = rs.getInt(1);
-                SekretarID = SekretarID+1;
-                String str = String.valueOf(SekretarID);
-                jLabel3.setText(str);
-                
-            }
-            
+            SekretarID = Database.maxSekretarID();
+            String str = String.valueOf(SekretarID);
+            jLabel3.setText(str);
+  
         }
         catch(Exception e){
            e.printStackTrace();
         }
-    }
+    } 
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -304,48 +297,34 @@ public class NeuerSekretarHinzufügen extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        String SekretarID = jLabel3.getText();
+        int SekretarID = Integer.parseInt(jLabel3.getText());
         String Ausweis = jTextField1.getText();
         String Vorname = jTextField2.getText();
         String Nachname = jTextField9.getText();
         String Geschlecht = (String) jComboBox1.getSelectedItem();
-        String Age = jTextField5.getText();
+        int Age = Integer.parseInt(jTextField5.getText());
         String Telefonnummer = jTextField6.getText();
         String Adresse = jTextField7.getText();
-        String Gehalt = jTextField8.getText();
-        String Genommen = jTextField10.getText();
-        try{
-            Connection con = ConnectionProvider.getCon();
-            PreparedStatement ps = con.prepareStatement("insert into sekretar values (?,?,?,?,?,?,?,?,?,?)");
-            ps.setString(1, SekretarID);
-            ps.setString(2, Ausweis);
-            ps.setString(3, Vorname);
-            ps.setString(4, Nachname);
-            ps.setString(5, Geschlecht);
-            ps.setString(6, Age);
-            ps.setString(7, Telefonnummer);
-            ps.setString(8, Adresse);
-            ps.setString(9, Gehalt);
-            ps.setString(10, Genommen);
-            ps.executeUpdate();
-            JOptionPane.showMessageDialog(null, "Erfolgreich Gespeichert");
-            setVisible(false);
-            new NeuerSekretarHinzufügen().setVisible(true);
-        }
-        catch(Exception e){
-            e.printStackTrace();
-        }
+        float Gehalt = Float.parseFloat(jTextField8.getText());
+        boolean Genommen = Boolean.parseBoolean(jTextField10.getText());
+
+        Database.addSekretar(new Sekretar(SekretarID, Ausweis, Vorname, Nachname, Geschlecht, Age, Telefonnummer, Adresse, Gehalt, Genommen));
+        setVisible(false);
+        dispose();
+        new NeuerSekretarHinzufügen().setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
         setVisible(false);
+        dispose();
         new NeuerSekretarHinzufügen().setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         setVisible(false);
+        dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

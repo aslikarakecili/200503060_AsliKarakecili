@@ -462,95 +462,72 @@ public class AktualisiereLöscheKunde extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         setVisible(false);
+        dispose();
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
         setVisible(false);
+        dispose();
         new AktualisiereLöscheKunde().setVisible(true);
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        int checkKundenID = 0;
+        // int checkKundenID = 0;
         String KundenID = jTextField1.getText();
-        try{
-            Connection con = ConnectionProvider.getCon();
-            Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery("select * from kunde where KundenID = '"+KundenID+"'");
-            while(rs.next()){
-                checkKundenID = 1;
-                jTextField1.setEditable(false);
-                jTextField2.setText(rs.getString(2));
-                jTextField3.setText(rs.getString(3));
-                jTextField4.setText(rs.getString(4));
-                jTextField12.setText(rs.getString(5));
-                jTextField5.setText(rs.getString(6));
-                jTextField6.setText(rs.getString(7));
-                jTextField7.setText(rs.getString(8));
-                jTextField8.setText(rs.getString(9));
-                jTextField13.setText(rs.getString(10));
-                jTextField9.setText(rs.getString(11));
-                jTextField10.setText(rs.getString(12));
-                jTextField11.setText(rs.getString(13));
-                jTextField15.setText(rs.getString(14));
-                jTextField16.setText(rs.getString(15));
-                jTextField18.setText(rs.getString(1));
-                
-            }
-            if (checkKundenID == 0){
-                JOptionPane.showMessageDialog(null, "Eine solche Kunde existiert nicht");
-            }
-            
+       
+        Kunde kunde = Database.searchKundenID(KundenID);
+        if (kunde != null) {
+            jTextField1.setEditable(false);
+            jTextField18.setEditable(false);
+            jTextField18.setText("" + kunde.getKundenID());
+            jTextField2.setText(kunde.getAusweis());
+            jTextField3.setText(kunde.getVorname());
+            jTextField4.setText(kunde.getNachname());
+            jTextField12.setText(kunde.getGeschlecht());
+            jTextField5.setText("" + kunde.getAge());
+            jTextField6.setText("" + kunde.getLange());
+            jTextField7.setText("" + kunde.getGewicht());
+            jTextField8.setText(kunde.getTelefonnummer());
+            jTextField13.setText(kunde.getZweck());
+            jTextField9.setText(kunde.getDiatprogramm());
+            jTextField10.setText(kunde.getSportprogramm());;
+            jTextField11.setText("" + kunde.getRechnung());
+            jTextField15.setText("" + kunde.isBezahlt());
+            jTextField16.setText(kunde.getGruppenstundenum());
         }
-        catch(Exception e){
-            JOptionPane.showMessageDialog(null, e);
+        else {
+            setVisible(false);
+            dispose();
+            new AktualisiereLöscheKunde().setVisible(true);
         }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        String KundenID = jTextField18.getText();
-        String Ausweisnummer = jTextField2.getText();
+        int KundenID = Integer.parseInt(jTextField18.getText());
+        String Ausweis = jTextField2.getText();
         String Vorname = jTextField3.getText();
         String Nachname = jTextField4.getText();
         String Geschlecht = jTextField12.getText();
-        String Age = jTextField5.getText();
-        String Lange = jTextField6.getText();
-        String Gewicht = jTextField7.getText();
+        int Age = Integer.parseInt(jTextField5.getText());
+        int Lange = Integer.parseInt(jTextField6.getText());
+        int Gewicht = Integer.parseInt(jTextField7.getText());
         String Telefonnummer = jTextField8.getText();
         String Zweck = jTextField13.getText();
         String Diatprogramm = jTextField9.getText();
         String Sportprogramm = jTextField10.getText();
-        String Rechnung = jTextField11.getText();
-        String Bezahlt = jTextField15.getText();
+        float Rechnung = Float.parseFloat(jTextField11.getText());
+        boolean Bezahlt = Boolean.parseBoolean(jTextField15.getText());
         String Gruppenstundenum = jTextField16.getText();
-        try{
-            Connection con = ConnectionProvider.getCon();
-            PreparedStatement ps = con.prepareStatement("update kunde set Ausweis=?,Vorname=?,Nachname=?,Age=?,Lange=?,Gewicht=?,Telefonnummer=?,Zweck=?,Diatprogramm=?,Sportprogramm=?,Rechnung=?,Bezahlt=?,Gruppenstundenum=? where KundenID=?");
-            ps.setString(1, Ausweisnummer);
-            ps.setString(2, Vorname);
-            ps.setString(3, Nachname);
-            ps.setString(4, Age);
-            ps.setString(5, Lange);
-            ps.setString(6, Gewicht);
-            ps.setString(7, Telefonnummer);
-            ps.setString(8, Zweck);
-            ps.setString(9, Diatprogramm);
-            ps.setString(10, Sportprogramm);
-            ps.setString(11, Rechnung);
-            ps.setString(12, Bezahlt);
-            ps.setString(13, Gruppenstundenum);
-            ps.setString(14, KundenID);
-            ps.executeUpdate();
-            JOptionPane.showMessageDialog(null, "Erfolgreich Aktualisiert");
-            setVisible(false);
+        
+        try {
+            Database.updateKunde(new Kunde(KundenID, Ausweis, Vorname, Nachname, Geschlecht, Age, Lange, Gewicht, Telefonnummer, Zweck, Diatprogramm, Sportprogramm, Rechnung, Bezahlt, Gruppenstundenum));
             new AktualisiereLöscheKunde().setVisible(true);
-        }
-        catch(Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
-            // JOptionPane.showMessageDialog(null, e);
         }
     }//GEN-LAST:event_jButton3ActionPerformed
 
@@ -559,56 +536,42 @@ public class AktualisiereLöscheKunde extends javax.swing.JFrame {
         int a = JOptionPane.showConfirmDialog(null, "Sind Sie sicher zum Löschen?","Select",JOptionPane.YES_NO_OPTION);
         if(a==0){
             String KundenID = jTextField18.getText();
-            try{
-                Connection con = ConnectionProvider.getCon();
-                Statement st = con.createStatement();
-                st.executeUpdate("delete from kunde where KundenID='"+KundenID+"'");
-                JOptionPane.showMessageDialog(null, "Erfolgreich Gelöscht");
-                setVisible(false);
-                new AktualisiereLöscheKunde().setVisible(true);
-            }
-            catch(Exception e){
-                JOptionPane.showMessageDialog(null, e);
-            }
+            Database.deleteKunde(KundenID);
+            setVisible(false);
+            dispose();
+            new AktualisiereLöscheKunde().setVisible(true);
         }
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
-        int checkKundenID = 0;
+        // int checkKundenID = 0;
         String Nachname = jTextField14.getText();
         String Vorname = jTextField17.getText();
-        try{
-            Connection con = ConnectionProvider.getCon();
-            Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery("select * from kunde where Vorname = '"+Vorname+"' and Nachname = '"+Nachname+"'");
-            while(rs.next()){
-                checkKundenID = 1;
-                jTextField1.setEditable(false);
-                jTextField2.setText(rs.getString(2));
-                jTextField3.setText(rs.getString(3));
-                jTextField4.setText(rs.getString(4));
-                jTextField12.setText(rs.getString(5));
-                jTextField5.setText(rs.getString(6));
-                jTextField6.setText(rs.getString(7));
-                jTextField7.setText(rs.getString(8));
-                jTextField8.setText(rs.getString(9));
-                jTextField13.setText(rs.getString(10));
-                jTextField9.setText(rs.getString(11));
-                jTextField10.setText(rs.getString(12));
-                jTextField11.setText(rs.getString(13));
-                jTextField15.setText(rs.getString(14));
-                jTextField16.setText(rs.getString(15));
-                jTextField18.setText(rs.getString(1));
- 
-            }
-            if (checkKundenID == 0){
-                JOptionPane.showMessageDialog(null, "Eine solche Kunde existiert nicht");
-            }
-            
+        Kunde kunde = Database.searchKundeName(Vorname, Nachname);
+        if (kunde != null) {
+            jTextField1.setEditable(false);
+            jTextField18.setEditable(false);
+            jTextField18.setText("" + kunde.getKundenID());
+            jTextField2.setText(kunde.getAusweis());
+            jTextField3.setText(kunde.getVorname());
+            jTextField4.setText(kunde.getNachname());
+            jTextField12.setText(kunde.getGeschlecht());
+            jTextField5.setText("" + kunde.getAge());
+            jTextField6.setText("" + kunde.getLange());
+            jTextField7.setText("" + kunde.getGewicht());
+            jTextField8.setText(kunde.getTelefonnummer());
+            jTextField13.setText(kunde.getZweck());
+            jTextField9.setText(kunde.getDiatprogramm());
+            jTextField10.setText(kunde.getSportprogramm());;
+            jTextField11.setText("" + kunde.getRechnung());
+            jTextField15.setText("" + kunde.isBezahlt());
+            jTextField16.setText(kunde.getGruppenstundenum());
         }
-        catch(Exception e){
-            JOptionPane.showMessageDialog(null, e);
+        else {
+            setVisible(false);
+            dispose();
+            new AktualisiereLöscheKunde().setVisible(true);
         }
     }//GEN-LAST:event_jButton6ActionPerformed
 

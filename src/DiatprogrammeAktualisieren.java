@@ -280,82 +280,60 @@ public class DiatprogrammeAktualisieren extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         setVisible(false);
+        dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        int checkDiatID = 0;
+        // int checkDiatID = 0;
         String DiatID = jTextField1.getText();
-        try{
-            Connection con = ConnectionProvider.getCon();
-            Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery("select * from diatprogramm where DiatID = '"+DiatID+"'");
-            while(rs.next()){
-                checkDiatID = 1;
-                jLabel12.setText(rs.getString(1));
-                jTextField2.setText(rs.getString(2));
-                jTextField3.setText(rs.getString(3));
-                jTextField4.setText(rs.getString(4));
-                jTextField5.setText(rs.getString(5));
-            }
-            if (checkDiatID == 0){
-                JOptionPane.showMessageDialog(null, "Eine solche Diat existiert nicht");
-            }
-
+        Diatprogramm diatprogramm = Database.searchDiatID(DiatID);
+        if (diatprogramm != null) {
+            jTextField1.setEditable(false);
+            jLabel12.setText("" + diatprogramm.getDiatID());
+            jTextField2.setText(diatprogramm.getDiatname());
+            jTextField3.setText(diatprogramm.getTage());
+            jTextField4.setText(diatprogramm.getNahrungen());
+            jTextField5.setText(diatprogramm.getUhrzeiten());
         }
-        catch(Exception e){
-            JOptionPane.showMessageDialog(null, e);
+        else {
+            setVisible(false);
+            dispose();
+            new DiatprogrammeAktualisieren().setVisible(true);
         }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
-        int checkDiatID = 0;
+        //int checkDiatID = 0;
         String Diatname = jTextField17.getText();
-        try{
-            Connection con = ConnectionProvider.getCon();
-            Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery("select * from diatprogramm where Diatname = '"+Diatname+"'");
-            while(rs.next()){
-                checkDiatID = 1;
-                jLabel12.setText(rs.getString(1));
-                jTextField2.setText(rs.getString(2));
-                jTextField3.setText(rs.getString(3));
-                jTextField4.setText(rs.getString(4));
-                jTextField5.setText(rs.getString(5));
-            }
-            if (checkDiatID == 0){
-                JOptionPane.showMessageDialog(null, "Eine solche Diat existiert nicht");
-            }
-
-        }
-        catch(Exception e){
-            JOptionPane.showMessageDialog(null, e);
+        Diatprogramm diatprogramm = Database.searchDiatName(Diatname);
+        if (diatprogramm != null) {
+            jTextField1.setEditable(false);
+            jLabel12.setText("" + diatprogramm.getDiatID());
+            jTextField2.setText(diatprogramm.getDiatname());
+            jTextField3.setText(diatprogramm.getTage());
+            jTextField4.setText(diatprogramm.getNahrungen());
+            jTextField5.setText(diatprogramm.getUhrzeiten());
+        } else {
+            setVisible(false);
+            dispose();
+        new DiatprogrammeAktualisieren().setVisible(true);
         }
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        String DiatID = jLabel12.getText();
+        int DiatID = Integer.parseInt(jLabel12.getText());
         String Diatname = jTextField2.getText();
         String Tage = jTextField3.getText();
         String Nahrungen = jTextField4.getText();
         String Uhrzeiten = jTextField5.getText();
 
-        try{
-            Connection con = ConnectionProvider.getCon();
-            PreparedStatement ps = con.prepareStatement("insert into diatprogramm values (?,?,?,?,?)");
-            ps.setString(1, DiatID);
-            ps.setString(2, Diatname);
-            ps.setString(3, Tage);
-            ps.setString(4, Nahrungen);
-            ps.setString(5, Uhrzeiten);
-            ps.executeUpdate();
-            JOptionPane.showMessageDialog(null, "Erfolgreich Gespeichert");
-            setVisible(false);
+        try {
+            Database.updateDiatprogramm(new Diatprogramm(DiatID, Diatname, Tage, Nahrungen, Uhrzeiten));
             new DiatprogrammeAktualisieren().setVisible(true);
-        }
-        catch(Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }//GEN-LAST:event_jButton3ActionPerformed
@@ -363,26 +341,19 @@ public class DiatprogrammeAktualisieren extends javax.swing.JFrame {
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
         int a = JOptionPane.showConfirmDialog(null, "Sind Sie sicher zum Löschen?","Select",JOptionPane.YES_NO_OPTION);
-        String DiatID = jLabel12.getText();
         if(a==0){
-            String GruppenstundenID = jTextField1.getText();
-            try{
-                Connection con = ConnectionProvider.getCon();
-                Statement st = con.createStatement();
-                st.executeUpdate("delete from diatprogramm where DiatID='"+DiatID+"'");
-                JOptionPane.showMessageDialog(null, "Erfolgreich Gelöscht");
-                setVisible(false);
-                new DiatprogrammeAktualisieren().setVisible(true);
-            }
-            catch(Exception e){
-                JOptionPane.showMessageDialog(null, e);
-            }
+            String DiatID = jLabel12.getText();
+            Database.deleteDiatprogramm(DiatID);
+            setVisible(false);
+            dispose();
+            new DiatprogrammeAktualisieren().setVisible(true);
         }
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
         setVisible(false);
+        dispose();
         new DiatprogrammeAktualisieren().setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
 
