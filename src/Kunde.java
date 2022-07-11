@@ -15,7 +15,7 @@ public class Kunde {
     private String Geschlecht;
     private int Age;
     private int Lange;
-    private int Gewicht;
+    private float Gewicht;
     private String Telefonnummer;
     private String Zweck;
     private String Diatprogramm;
@@ -24,7 +24,7 @@ public class Kunde {
     private boolean Bezahlt;
     private String Gruppenstundenum;
     
-    public Kunde (int KundenID, String Ausweis, String Vorname, String Nachname, String Geschlecht, int Age, int Lange, int Gewicht, String Telefonnummer, String Zweck, String Diatprogramm, String Sportprogramm, float Rechnung, boolean Bezahlt, String Gruppenstundenum){
+    public Kunde (int KundenID, String Ausweis, String Vorname, String Nachname, String Geschlecht, int Age, int Lange, float Gewicht, String Telefonnummer, String Zweck, String Diatprogramm, String Sportprogramm, float Rechnung, boolean Bezahlt, String Gruppenstundenum){
         this.KundenID = KundenID;
         this.Ausweis = Ausweis;
         this.Vorname = Vorname;
@@ -70,7 +70,7 @@ public class Kunde {
         return Lange;
     }
 
-    public int getGewicht() {
+    public float getGewicht() {
         return Gewicht;
     }
 
@@ -130,7 +130,7 @@ public class Kunde {
         this.Lange = Lange;
     }
 
-    public void setGewicht(int Gewicht) {
+    public void setGewicht(float Gewicht) {
         this.Gewicht = Gewicht;
     }
 

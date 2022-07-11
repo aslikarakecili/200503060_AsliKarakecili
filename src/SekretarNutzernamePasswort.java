@@ -170,6 +170,7 @@ public class SekretarNutzernamePasswort extends javax.swing.JFrame {
             setVisible(false);
             dispose();
             new SekretarNutzernamePasswort().setVisible(true);
+            dispose();
         } catch (Exception e) {
             e.printStackTrace();
         } 
@@ -187,6 +188,7 @@ public class SekretarNutzernamePasswort extends javax.swing.JFrame {
         setVisible(false);
         dispose();
         new SekretarNutzernamePasswort().setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     /**

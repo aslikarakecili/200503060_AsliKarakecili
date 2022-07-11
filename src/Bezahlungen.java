@@ -22,15 +22,15 @@ public class Bezahlungen extends javax.swing.JFrame {
      */
     public Bezahlungen() {
         initComponents();
-        jTextField10.setVisible(false);
-        jTextField11.setVisible(false);
-        jTextField12.setVisible(false);
-        jTextField13.setVisible(false);
-        jTextField14.setVisible(false);
-        jTextField15.setVisible(false);
-        jTextField16.setVisible(false);
-        jTextField17.setVisible(false);
-        jTextField18.setVisible(false);
+        jAusweis.setVisible(false);
+        jGeschlecht.setVisible(false);
+        jAge.setVisible(false);
+        jLange.setVisible(false);
+        jGewicht.setVisible(false);
+        jZweck.setVisible(false);
+        jDiatprogramm.setVisible(false);
+        jSportpraogramm.setVisible(false);
+        jGruppenstundenum.setVisible(false);
         
     }
 
@@ -55,28 +55,28 @@ public class Bezahlungen extends javax.swing.JFrame {
         jTextField9 = new javax.swing.JTextField();
         jButton5 = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
+        jKundenID = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
+        jVorname = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
+        jNachname = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
+        jTelefonnummer = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
+        jRechnung = new javax.swing.JTextField();
+        jBezahlt = new javax.swing.JTextField();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
-        jTextField10 = new javax.swing.JTextField();
-        jTextField11 = new javax.swing.JTextField();
-        jTextField12 = new javax.swing.JTextField();
-        jTextField13 = new javax.swing.JTextField();
-        jTextField14 = new javax.swing.JTextField();
-        jTextField15 = new javax.swing.JTextField();
-        jTextField16 = new javax.swing.JTextField();
-        jTextField17 = new javax.swing.JTextField();
-        jTextField18 = new javax.swing.JTextField();
+        jAusweis = new javax.swing.JTextField();
+        jGeschlecht = new javax.swing.JTextField();
+        jAge = new javax.swing.JTextField();
+        jLange = new javax.swing.JTextField();
+        jGewicht = new javax.swing.JTextField();
+        jZweck = new javax.swing.JTextField();
+        jDiatprogramm = new javax.swing.JTextField();
+        jSportpraogramm = new javax.swing.JTextField();
+        jGruppenstundenum = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocation(new java.awt.Point(175, 100));
@@ -137,25 +137,25 @@ public class Bezahlungen extends javax.swing.JFrame {
         jLabel9.setForeground(new java.awt.Color(153, 153, 255));
         jLabel9.setText("KundenID :");
 
-        jTextField6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jKundenID.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(153, 153, 255));
         jLabel5.setText("Vorname :");
 
-        jTextField2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jVorname.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(153, 153, 255));
         jLabel6.setText("Nachname :");
 
-        jTextField3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jNachname.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(153, 153, 255));
         jLabel7.setText("Telefonnummer :");
 
-        jTextField4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jTelefonnummer.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(153, 153, 255));
@@ -165,9 +165,9 @@ public class Bezahlungen extends javax.swing.JFrame {
         jLabel3.setForeground(new java.awt.Color(153, 153, 255));
         jLabel3.setText("Bezahlt (0=nein, 1=ja) :");
 
-        jTextField5.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jRechnung.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
-        jTextField7.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jBezahlt.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton3.setForeground(new java.awt.Color(0, 102, 102));
@@ -189,23 +189,23 @@ public class Bezahlungen extends javax.swing.JFrame {
             }
         });
 
-        jTextField10.setText("jTextField10");
+        jAusweis.setText("jTextField10");
 
-        jTextField11.setText("jTextField11");
+        jGeschlecht.setText("jTextField11");
 
-        jTextField12.setText("jTextField12");
+        jAge.setText("jTextField12");
 
-        jTextField13.setText("jTextField13");
+        jLange.setText("jTextField13");
 
-        jTextField14.setText("jTextField14");
+        jGewicht.setText("jTextField14");
 
-        jTextField15.setText("jTextField15");
+        jZweck.setText("jTextField15");
 
-        jTextField16.setText("jTextField16");
+        jDiatprogramm.setText("jTextField16");
 
-        jTextField17.setText("jTextField17");
+        jSportpraogramm.setText("jTextField17");
 
-        jTextField18.setText("jTextField18");
+        jGruppenstundenum.setText("jTextField18");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -223,10 +223,10 @@ public class Bezahlungen extends javax.swing.JFrame {
                                 .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField4, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jTextField3)
-                            .addComponent(jTextField2)
-                            .addComponent(jTextField6))
+                            .addComponent(jTelefonnummer, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jNachname)
+                            .addComponent(jVorname)
+                            .addComponent(jKundenID))
                         .addGap(118, 118, 118)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -239,8 +239,8 @@ public class Bezahlungen extends javax.swing.JFrame {
                                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(47, 47, 47)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jTextField5)
-                                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(jRechnung)
+                                    .addComponent(jBezahlt, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -264,24 +264,24 @@ public class Bezahlungen extends javax.swing.JFrame {
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(41, 41, 41)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jAusweis, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLange, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jDiatprogramm, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jSportpraogramm, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jGruppenstundenum, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jGeschlecht, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jGewicht, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(34, 34, 34)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jZweck, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jAge, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 496, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(43, 43, 43))))
@@ -295,14 +295,14 @@ public class Bezahlungen extends javax.swing.JFrame {
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jAusweis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jGeschlecht, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jAge, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(jLange, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jGewicht, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jZweck, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(45, 45, 45)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -326,35 +326,35 @@ public class Bezahlungen extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(8, 8, 8)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jDiatprogramm, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jSportpraogramm, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jGruppenstundenum, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(40, 40, 40)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel9)
-                                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jKundenID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(37, 37, 37)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel5)
-                                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jVorname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(42, 42, 42)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel6)
-                                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jNachname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(48, 48, 48)
                                 .addComponent(jLabel7))
-                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jTelefonnummer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(59, 59, 59)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel8)
-                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jRechnung, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(48, 48, 48)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel3)
-                            .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jBezahlt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(98, 98, 98)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jButton4)
@@ -390,32 +390,32 @@ public class Bezahlungen extends javax.swing.JFrame {
 
             Kunde kunde = Database.searchKundenID(KundenID);
             if (kunde != null) {
-                jTextField2.setEditable(false);
-                jTextField3.setEditable(false);
-                jTextField6.setEditable(false);
-                jTextField14.setEditable(false);
-                jTextField4.setEditable(false);
+                jVorname.setEditable(false);
+                jNachname.setEditable(false);
+                jKundenID.setEditable(false);
+                jTelefonnummer.setEditable(false);
 
 
-                jTextField6.setText("" + kunde.getKundenID());
-                jTextField10.setText(kunde.getAusweis());
-                jTextField2.setText(kunde.getVorname());
-                jTextField3.setText(kunde.getNachname());
-                jTextField11.setText(kunde.getGeschlecht());
-                jTextField12.setText("" + kunde.getAge());
-                jTextField13.setText("" + kunde.getLange());
-                jTextField14.setText("" + kunde.getGewicht());
-                jTextField4.setText(kunde.getTelefonnummer());
-                jTextField15.setText(kunde.getZweck());
-                jTextField16.setText(kunde.getDiatprogramm());
-                jTextField17.setText(kunde.getSportprogramm());;
-                jTextField5.setText("" + kunde.getRechnung());
-                jTextField7.setText("" + kunde.isBezahlt());
-                jTextField18.setText(kunde.getGruppenstundenum());
+                jKundenID.setText("" + kunde.getKundenID());
+                jAusweis.setText(kunde.getAusweis());
+                jVorname.setText(kunde.getVorname());
+                jNachname.setText(kunde.getNachname());
+                jGeschlecht.setText(kunde.getGeschlecht());
+                jAge.setText("" + kunde.getAge());
+                jLange.setText("" + kunde.getLange());
+                jGewicht.setText("" + kunde.getGewicht());
+                jTelefonnummer.setText(kunde.getTelefonnummer());
+                jZweck.setText(kunde.getZweck());
+                jDiatprogramm.setText(kunde.getDiatprogramm());
+                jSportpraogramm.setText(kunde.getSportprogramm());;
+                jRechnung.setText("" + kunde.getRechnung());
+                jBezahlt.setText("" + kunde.isBezahlt());
+                jGruppenstundenum.setText(kunde.getGruppenstundenum());
             } else {
                 setVisible(false);
                 dispose();
                 new Bezahlungen().setVisible(true);
+                dispose();
             }
             
     }//GEN-LAST:event_jButton2ActionPerformed
@@ -427,57 +427,57 @@ public class Bezahlungen extends javax.swing.JFrame {
         String Vorname = jTextField8.getText();
         Kunde kunde = Database.searchKundeName(Vorname, Nachname);
         if (kunde != null) {
-                jTextField2.setEditable(false);
-                jTextField3.setEditable(false);
-                jTextField6.setEditable(false);
-                jTextField14.setEditable(false);
-                jTextField4.setEditable(false);
+                jVorname.setEditable(false);
+                jNachname.setEditable(false);
+                jKundenID.setEditable(false);
 
-                jTextField6.setText("" + kunde.getKundenID());
-                jTextField10.setText(kunde.getAusweis());
-                jTextField2.setText(kunde.getVorname());
-                jTextField3.setText(kunde.getNachname());
-                jTextField11.setText(kunde.getGeschlecht());
-                jTextField12.setText("" + kunde.getAge());
-                jTextField13.setText("" + kunde.getLange());
-                jTextField14.setText("" + kunde.getGewicht());
-                jTextField4.setText(kunde.getTelefonnummer());
-                jTextField15.setText(kunde.getZweck());
-                jTextField16.setText(kunde.getDiatprogramm());
-                jTextField17.setText(kunde.getSportprogramm());;
-                jTextField5.setText("" + kunde.getRechnung());
-                jTextField7.setText("" + kunde.isBezahlt());
-                jTextField18.setText(kunde.getGruppenstundenum());
+                jKundenID.setText("" + kunde.getKundenID());
+                jAusweis.setText(kunde.getAusweis());
+                jVorname.setText(kunde.getVorname());
+                jNachname.setText(kunde.getNachname());
+                jGeschlecht.setText(kunde.getGeschlecht());
+                jAge.setText("" + kunde.getAge());
+                jLange.setText("" + kunde.getLange());
+                jGewicht.setText("" + kunde.getGewicht());
+                jTelefonnummer.setText(kunde.getTelefonnummer());
+                jZweck.setText(kunde.getZweck());
+                jDiatprogramm.setText(kunde.getDiatprogramm());
+                jSportpraogramm.setText(kunde.getSportprogramm());;
+                jRechnung.setText("" + kunde.getRechnung());
+                jBezahlt.setText("" + kunde.isBezahlt());
+                jGruppenstundenum.setText(kunde.getGruppenstundenum());
         }
         else {
             setVisible(false);
             dispose();
             new Bezahlungen().setVisible(true);
+            dispose();
         }
         
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        int KundenID = Integer.parseInt(jTextField6.getText());
-        String Ausweis = jTextField10.getText();
-        String Vorname = jTextField2.getText();
-        String Nachname = jTextField13.getText();
-        String Geschlecht = jTextField11.getText();
-        int Age = Integer.parseInt(jTextField12.getText());
-        int Lange = Integer.parseInt(jTextField13.getText());
-        int Gewicht = Integer.parseInt(jTextField14.getText());
-        String Telefonnummer = jTextField4.getText();
-        String Zweck = jTextField15.getText();
-        String Diatprogramm = jTextField16.getText();
-        String Sportprogramm = jTextField17.getText();
-        float Rechnung = Float.parseFloat(jTextField5.getText());
-        boolean Bezahlt = Boolean.parseBoolean(jTextField7.getText());
-        String Gruppenstundenum = jTextField18.getText();
+        int KundenID = Integer.parseInt(jKundenID.getText());
+        String Ausweis = jAusweis.getText();
+        String Vorname = jVorname.getText();
+        String Nachname = jNachname.getText();
+        String Geschlecht = jGeschlecht.getText();
+        int Age = Integer.parseInt(jAge.getText());
+        int Lange = Integer.parseInt(jLange.getText());
+        float Gewicht = Float.parseFloat(jGewicht.getText());
+        String Telefonnummer = jTelefonnummer.getText();
+        String Zweck = jZweck.getText();
+        String Diatprogramm = jDiatprogramm.getText();
+        String Sportprogramm = jSportpraogramm.getText();
+        float Rechnung = Float.parseFloat(jRechnung.getText());
+        boolean Bezahlt = Boolean.parseBoolean(jBezahlt.getText());
+        String Gruppenstundenum = jGruppenstundenum.getText();
         
         try{
             Database.updateKunde(new Kunde(KundenID, Ausweis, Vorname, Nachname, Geschlecht, Age, Lange, Gewicht, Telefonnummer, Zweck, Diatprogramm, Sportprogramm, Rechnung, Bezahlt, Gruppenstundenum));
             new Bezahlungen().setVisible(true);
+            dispose();
         }
         catch(Exception e){
             e.printStackTrace();
@@ -489,6 +489,7 @@ public class Bezahlungen extends javax.swing.JFrame {
         setVisible(false);
         dispose();
         new Bezahlungen().setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
@@ -521,17 +522,24 @@ public class Bezahlungen extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Bezahlungen().setVisible(true);
-            }
+                new Bezahlungen().setVisible(true);            }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField jAge;
+    private javax.swing.JTextField jAusweis;
+    private javax.swing.JTextField jBezahlt;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
+    private javax.swing.JTextField jDiatprogramm;
+    private javax.swing.JTextField jGeschlecht;
+    private javax.swing.JTextField jGewicht;
+    private javax.swing.JTextField jGruppenstundenum;
+    private javax.swing.JTextField jKundenID;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
@@ -542,24 +550,16 @@ public class Bezahlungen extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JTextField jLange;
+    private javax.swing.JTextField jNachname;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JTextField jRechnung;
+    private javax.swing.JTextField jSportpraogramm;
+    private javax.swing.JTextField jTelefonnummer;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField15;
-    private javax.swing.JTextField jTextField16;
-    private javax.swing.JTextField jTextField17;
-    private javax.swing.JTextField jTextField18;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
+    private javax.swing.JTextField jVorname;
+    private javax.swing.JTextField jZweck;
     // End of variables declaration//GEN-END:variables
 }

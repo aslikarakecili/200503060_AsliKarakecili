@@ -169,6 +169,7 @@ public class TrainerNutzernamePasswort extends javax.swing.JFrame {
             setVisible(false);
             dispose();
             new TrainerNutzernamePasswort().setVisible(true);
+            dispose();
         } catch (Exception e) {
             e.printStackTrace();
         } 
@@ -185,6 +186,7 @@ public class TrainerNutzernamePasswort extends javax.swing.JFrame {
         setVisible(false);
         dispose();
         new TrainerNutzernamePasswort().setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     /**

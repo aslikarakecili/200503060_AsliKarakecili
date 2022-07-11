@@ -221,6 +221,7 @@ public class KundenAuflisten extends javax.swing.JFrame {
         setVisible(false);
         dispose();
         new KundenAuflisten().setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton4MouseClicked
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -228,6 +229,7 @@ public class KundenAuflisten extends javax.swing.JFrame {
         setVisible(false);
         dispose();
         new KundenAuflisten().setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
 
     /**

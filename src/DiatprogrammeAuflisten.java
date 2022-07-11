@@ -163,6 +163,7 @@ public class DiatprogrammeAuflisten extends javax.swing.JFrame {
         setVisible(false);
         dispose();
         new DiatprogrammeAuflisten().setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton4MouseClicked
 
     /**

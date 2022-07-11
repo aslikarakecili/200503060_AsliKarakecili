@@ -187,6 +187,7 @@ public class AdminNutzernamePasswort extends javax.swing.JFrame {
         setVisible(false);
         dispose();
         new AdminNutzernamePasswort().setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     /**

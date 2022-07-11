@@ -384,6 +384,7 @@ public class TrainerAktualisierenLöschen extends javax.swing.JFrame {
         setVisible(false);
         dispose();
         new TrainerAktualisierenLöschen().setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -409,6 +410,7 @@ public class TrainerAktualisierenLöschen extends javax.swing.JFrame {
             setVisible(false);
             dispose();
             new TrainerAktualisierenLöschen().setVisible(true);
+            dispose();
         }
 
     }//GEN-LAST:event_jButton2ActionPerformed
@@ -429,6 +431,7 @@ public class TrainerAktualisierenLöschen extends javax.swing.JFrame {
         try {
             Database.updateTrainer(new Trainer(TrainerID, Ausweis, Vorname, Nachname, Geschlecht, Age, Telefonnummer, Adresse, Gehalt, Genommen));
             new TrainerAktualisierenLöschen().setVisible(true);
+            dispose();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -444,6 +447,7 @@ public class TrainerAktualisierenLöschen extends javax.swing.JFrame {
             setVisible(false);
             dispose();
             new TrainerAktualisierenLöschen().setVisible(true);
+            dispose();
         }
     }//GEN-LAST:event_jButton5ActionPerformed
 
@@ -471,6 +475,7 @@ public class TrainerAktualisierenLöschen extends javax.swing.JFrame {
             setVisible(false);
             dispose();
         new TrainerAktualisierenLöschen().setVisible(true);
+        dispose();
         }
     }//GEN-LAST:event_jButton3ActionPerformed
 

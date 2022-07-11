@@ -36,43 +36,43 @@ public class AktualisiereLöscheKunde extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
         jButton2 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
+        jAusweis = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
+        jVorname = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
+        jNachname = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
+        jAge = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
+        jLange = new javax.swing.JTextField();
+        jGewicht = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
-        jTextField8 = new javax.swing.JTextField();
+        jTelefon = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        jTextField9 = new javax.swing.JTextField();
+        jDiat = new javax.swing.JTextField();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        jTextField10 = new javax.swing.JTextField();
-        jTextField11 = new javax.swing.JTextField();
+        jSport = new javax.swing.JTextField();
+        jRechnung = new javax.swing.JTextField();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
-        jTextField12 = new javax.swing.JTextField();
-        jTextField13 = new javax.swing.JTextField();
+        jGeschlecht = new javax.swing.JTextField();
+        jZweck = new javax.swing.JTextField();
         jLabel15 = new javax.swing.JLabel();
         jTextField14 = new javax.swing.JTextField();
         jButton6 = new javax.swing.JButton();
         jLabel16 = new javax.swing.JLabel();
-        jTextField15 = new javax.swing.JTextField();
+        jBezahlt = new javax.swing.JTextField();
         jLabel17 = new javax.swing.JLabel();
-        jTextField16 = new javax.swing.JTextField();
+        jGruppenstunde = new javax.swing.JTextField();
         jLabel18 = new javax.swing.JLabel();
         jTextField17 = new javax.swing.JTextField();
         jLabel19 = new javax.swing.JLabel();
-        jTextField18 = new javax.swing.JTextField();
+        jKundenID = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocation(new java.awt.Point(175, 100));
@@ -112,19 +112,19 @@ public class AktualisiereLöscheKunde extends javax.swing.JFrame {
         jLabel3.setForeground(new java.awt.Color(255, 102, 102));
         jLabel3.setText("Ausweisnummer :");
 
-        jTextField2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jAusweis.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 102, 102));
         jLabel4.setText("Vorname :");
 
-        jTextField3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jVorname.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 102, 102));
         jLabel5.setText("Nachname :");
 
-        jTextField4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jNachname.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 102, 102));
@@ -138,21 +138,21 @@ public class AktualisiereLöscheKunde extends javax.swing.JFrame {
         jLabel8.setForeground(new java.awt.Color(255, 102, 102));
         jLabel8.setText("Lange (cm) :");
 
-        jTextField5.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jAge.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 102, 102));
         jLabel9.setText("Gewicht (kg) :");
 
-        jTextField6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLange.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
-        jTextField7.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jGewicht.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 102, 102));
         jLabel10.setText("Telefonnummer :");
 
-        jTextField8.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jTelefon.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 102, 102));
@@ -162,7 +162,7 @@ public class AktualisiereLöscheKunde extends javax.swing.JFrame {
         jLabel12.setForeground(new java.awt.Color(255, 102, 102));
         jLabel12.setText("Diatprogramm :");
 
-        jTextField9.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jDiat.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 102, 102));
@@ -172,9 +172,9 @@ public class AktualisiereLöscheKunde extends javax.swing.JFrame {
         jLabel14.setForeground(new java.awt.Color(255, 102, 102));
         jLabel14.setText("Rechnung :");
 
-        jTextField10.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jSport.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
-        jTextField11.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jRechnung.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton3.setForeground(new java.awt.Color(0, 153, 153));
@@ -206,9 +206,9 @@ public class AktualisiereLöscheKunde extends javax.swing.JFrame {
             }
         });
 
-        jTextField12.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jGeschlecht.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
-        jTextField13.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jZweck.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(0, 153, 153));
@@ -230,10 +230,10 @@ public class AktualisiereLöscheKunde extends javax.swing.JFrame {
         jLabel16.setForeground(new java.awt.Color(255, 102, 102));
         jLabel16.setText("Bezahlt (0=nein, 1=ja) :");
 
-        jTextField15.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jTextField15.addActionListener(new java.awt.event.ActionListener() {
+        jBezahlt.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jBezahlt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField15ActionPerformed(evt);
+                jBezahltActionPerformed(evt);
             }
         });
 
@@ -241,7 +241,7 @@ public class AktualisiereLöscheKunde extends javax.swing.JFrame {
         jLabel17.setForeground(new java.awt.Color(255, 102, 102));
         jLabel17.setText("Gruppenstundenummer :");
 
-        jTextField16.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jGruppenstunde.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel18.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(0, 153, 153));
@@ -253,7 +253,7 @@ public class AktualisiereLöscheKunde extends javax.swing.JFrame {
         jLabel19.setForeground(new java.awt.Color(255, 102, 102));
         jLabel19.setText("KundenID :");
 
-        jTextField18.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jKundenID.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -291,29 +291,29 @@ public class AktualisiereLöscheKunde extends javax.swing.JFrame {
                                             .addGroup(jPanel1Layout.createSequentialGroup()
                                                 .addGap(133, 133, 133)
                                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(jAge, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                     .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                            .addComponent(jTextField4)
-                                            .addComponent(jTextField3)
-                                            .addComponent(jTextField2)
+                                            .addComponent(jNachname)
+                                            .addComponent(jVorname)
+                                            .addComponent(jAusweis)
                                             .addComponent(jLabel5)
                                             .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jGeschlecht, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jTextField18))
+                                            .addComponent(jKundenID))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                                .addComponent(jTextField6)
+                                                .addComponent(jLange)
                                                 .addGap(18, 18, 18)
-                                                .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jTextField8)
-                                            .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(jGewicht, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(jSport, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jTelefon)
+                                            .addComponent(jDiat, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jZweck, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE))))
                                 .addGap(16, 16, 16)))
@@ -343,15 +343,15 @@ public class AktualisiereLöscheKunde extends javax.swing.JFrame {
                                         .addComponent(jButton5))
                                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                         .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, 283, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jGruppenstunde, javax.swing.GroupLayout.PREFERRED_SIZE, 283, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGroup(jPanel1Layout.createSequentialGroup()
                                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(jRechnung, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                 .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(jTextField15)))))
+                                                .addComponent(jBezahlt)))))
                                 .addContainerGap(12, Short.MAX_VALUE))))))
         );
         jPanel1Layout.setVerticalGroup(
@@ -396,9 +396,9 @@ public class AktualisiereLöscheKunde extends javax.swing.JFrame {
                         .addComponent(jLabel19)
                         .addGap(12, 12, 12)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLange, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jGewicht, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jKundenID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel10)
@@ -407,10 +407,10 @@ public class AktualisiereLöscheKunde extends javax.swing.JFrame {
                             .addComponent(jLabel16))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jTelefon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jAusweis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jRechnung, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jBezahlt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel11)
@@ -418,17 +418,17 @@ public class AktualisiereLöscheKunde extends javax.swing.JFrame {
                             .addComponent(jLabel17))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jZweck, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jVorname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jGruppenstunde, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel12)
                             .addComponent(jLabel5))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jDiat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jNachname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel13)
@@ -439,9 +439,9 @@ public class AktualisiereLöscheKunde extends javax.swing.JFrame {
                                     .addComponent(jLabel6))
                                 .addGap(7, 7, 7)))
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(jSport, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jGeschlecht, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jAge, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(26, Short.MAX_VALUE))
         );
 
@@ -471,6 +471,7 @@ public class AktualisiereLöscheKunde extends javax.swing.JFrame {
         setVisible(false);
         dispose();
         new AktualisiereLöscheKunde().setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -481,51 +482,53 @@ public class AktualisiereLöscheKunde extends javax.swing.JFrame {
         Kunde kunde = Database.searchKundenID(KundenID);
         if (kunde != null) {
             jTextField1.setEditable(false);
-            jTextField18.setEditable(false);
-            jTextField18.setText("" + kunde.getKundenID());
-            jTextField2.setText(kunde.getAusweis());
-            jTextField3.setText(kunde.getVorname());
-            jTextField4.setText(kunde.getNachname());
-            jTextField12.setText(kunde.getGeschlecht());
-            jTextField5.setText("" + kunde.getAge());
-            jTextField6.setText("" + kunde.getLange());
-            jTextField7.setText("" + kunde.getGewicht());
-            jTextField8.setText(kunde.getTelefonnummer());
-            jTextField13.setText(kunde.getZweck());
-            jTextField9.setText(kunde.getDiatprogramm());
-            jTextField10.setText(kunde.getSportprogramm());;
-            jTextField11.setText("" + kunde.getRechnung());
-            jTextField15.setText("" + kunde.isBezahlt());
-            jTextField16.setText(kunde.getGruppenstundenum());
+            jKundenID.setEditable(false);
+            jKundenID.setText("" + kunde.getKundenID());
+            jAusweis.setText(kunde.getAusweis());
+            jVorname.setText(kunde.getVorname());
+            jNachname.setText(kunde.getNachname());
+            jGeschlecht.setText(kunde.getGeschlecht());
+            jAge.setText("" + kunde.getAge());
+            jLange.setText("" + kunde.getLange());
+            jGewicht.setText("" + kunde.getGewicht());
+            jTelefon.setText(kunde.getTelefonnummer());
+            jZweck.setText(kunde.getZweck());
+            jDiat.setText(kunde.getDiatprogramm());
+            jSport.setText(kunde.getSportprogramm());;
+            jRechnung.setText("" + kunde.getRechnung());
+            jBezahlt.setText("" + kunde.isBezahlt());
+            jGruppenstunde.setText(kunde.getGruppenstundenum());
         }
         else {
             setVisible(false);
             dispose();
             new AktualisiereLöscheKunde().setVisible(true);
+            dispose();
         }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        int KundenID = Integer.parseInt(jTextField18.getText());
-        String Ausweis = jTextField2.getText();
-        String Vorname = jTextField3.getText();
-        String Nachname = jTextField4.getText();
-        String Geschlecht = jTextField12.getText();
-        int Age = Integer.parseInt(jTextField5.getText());
-        int Lange = Integer.parseInt(jTextField6.getText());
-        int Gewicht = Integer.parseInt(jTextField7.getText());
-        String Telefonnummer = jTextField8.getText();
-        String Zweck = jTextField13.getText();
-        String Diatprogramm = jTextField9.getText();
-        String Sportprogramm = jTextField10.getText();
-        float Rechnung = Float.parseFloat(jTextField11.getText());
-        boolean Bezahlt = Boolean.parseBoolean(jTextField15.getText());
-        String Gruppenstundenum = jTextField16.getText();
+        int KundenID = Integer.parseInt(jKundenID.getText());
+        String Ausweis = jAusweis.getText();
+        String Vorname = jVorname.getText();
+        String Nachname = jNachname.getText();
+        String Geschlecht = jGeschlecht.getText();
+        int Age = Integer.parseInt(jAge.getText());
+        int Lange = Integer.parseInt(jLange.getText());
+        float Gewicht = Float.parseFloat(jGewicht.getText());
+        String Telefonnummer = jTelefon.getText();
+        String Zweck = jZweck.getText();
+        String Diatprogramm = jDiat.getText();
+        String Sportprogramm = jSport.getText();
+        float Rechnung = Float.parseFloat(jRechnung.getText());
+        boolean Bezahlt = Boolean.parseBoolean(jBezahlt.getText());
+        String Gruppenstundenum = jGruppenstunde.getText();
         
         try {
             Database.updateKunde(new Kunde(KundenID, Ausweis, Vorname, Nachname, Geschlecht, Age, Lange, Gewicht, Telefonnummer, Zweck, Diatprogramm, Sportprogramm, Rechnung, Bezahlt, Gruppenstundenum));
             new AktualisiereLöscheKunde().setVisible(true);
+            dispose();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -535,11 +538,12 @@ public class AktualisiereLöscheKunde extends javax.swing.JFrame {
         // TODO add your handling code here:
         int a = JOptionPane.showConfirmDialog(null, "Sind Sie sicher zum Löschen?","Select",JOptionPane.YES_NO_OPTION);
         if(a==0){
-            String KundenID = jTextField18.getText();
+            String KundenID = jKundenID.getText();
             Database.deleteKunde(KundenID);
             setVisible(false);
             dispose();
             new AktualisiereLöscheKunde().setVisible(true);
+            dispose();
         }
     }//GEN-LAST:event_jButton4ActionPerformed
 
@@ -551,33 +555,34 @@ public class AktualisiereLöscheKunde extends javax.swing.JFrame {
         Kunde kunde = Database.searchKundeName(Vorname, Nachname);
         if (kunde != null) {
             jTextField1.setEditable(false);
-            jTextField18.setEditable(false);
-            jTextField18.setText("" + kunde.getKundenID());
-            jTextField2.setText(kunde.getAusweis());
-            jTextField3.setText(kunde.getVorname());
-            jTextField4.setText(kunde.getNachname());
-            jTextField12.setText(kunde.getGeschlecht());
-            jTextField5.setText("" + kunde.getAge());
-            jTextField6.setText("" + kunde.getLange());
-            jTextField7.setText("" + kunde.getGewicht());
-            jTextField8.setText(kunde.getTelefonnummer());
-            jTextField13.setText(kunde.getZweck());
-            jTextField9.setText(kunde.getDiatprogramm());
-            jTextField10.setText(kunde.getSportprogramm());;
-            jTextField11.setText("" + kunde.getRechnung());
-            jTextField15.setText("" + kunde.isBezahlt());
-            jTextField16.setText(kunde.getGruppenstundenum());
+            jKundenID.setEditable(false);
+            jKundenID.setText("" + kunde.getKundenID());
+            jAusweis.setText(kunde.getAusweis());
+            jVorname.setText(kunde.getVorname());
+            jNachname.setText(kunde.getNachname());
+            jGeschlecht.setText(kunde.getGeschlecht());
+            jAge.setText("" + kunde.getAge());
+            jLange.setText("" + kunde.getLange());
+            jGewicht.setText("" + kunde.getGewicht());
+            jTelefon.setText(kunde.getTelefonnummer());
+            jZweck.setText(kunde.getZweck());
+            jDiat.setText(kunde.getDiatprogramm());
+            jSport.setText(kunde.getSportprogramm());;
+            jRechnung.setText("" + kunde.getRechnung());
+            jBezahlt.setText("" + kunde.isBezahlt());
+            jGruppenstunde.setText(kunde.getGruppenstundenum());
         }
         else {
             setVisible(false);
             dispose();
             new AktualisiereLöscheKunde().setVisible(true);
+            dispose();
         }
     }//GEN-LAST:event_jButton6ActionPerformed
 
-    private void jTextField15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField15ActionPerformed
+    private void jBezahltActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBezahltActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField15ActionPerformed
+    }//GEN-LAST:event_jBezahltActionPerformed
 
     /**
      * @param args the command line arguments
@@ -615,12 +620,20 @@ public class AktualisiereLöscheKunde extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField jAge;
+    private javax.swing.JTextField jAusweis;
+    private javax.swing.JTextField jBezahlt;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
+    private javax.swing.JTextField jDiat;
+    private javax.swing.JTextField jGeschlecht;
+    private javax.swing.JTextField jGewicht;
+    private javax.swing.JTextField jGruppenstunde;
+    private javax.swing.JTextField jKundenID;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -640,24 +653,16 @@ public class AktualisiereLöscheKunde extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JTextField jLange;
+    private javax.swing.JTextField jNachname;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JTextField jRechnung;
+    private javax.swing.JTextField jSport;
+    private javax.swing.JTextField jTelefon;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField13;
     private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField15;
-    private javax.swing.JTextField jTextField16;
     private javax.swing.JTextField jTextField17;
-    private javax.swing.JTextField jTextField18;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
+    private javax.swing.JTextField jVorname;
+    private javax.swing.JTextField jZweck;
     // End of variables declaration//GEN-END:variables
 }

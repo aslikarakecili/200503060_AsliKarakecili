@@ -252,6 +252,7 @@ public class TrainerKundenAuflistung extends javax.swing.JFrame {
         setVisible(false);
         dispose();
         new TrainerKundenAuflistung().setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
 
     /**

@@ -45,25 +45,25 @@ public class GehalteDerSekretare extends javax.swing.JFrame {
         jTextField9 = new javax.swing.JTextField();
         jButton5 = new javax.swing.JButton();
         jLabel16 = new javax.swing.JLabel();
-        jTextField14 = new javax.swing.JTextField();
+        jSekID = new javax.swing.JTextField();
         jLabel15 = new javax.swing.JLabel();
-        jTextField15 = new javax.swing.JTextField();
+        jAusweis = new javax.swing.JTextField();
         jLabel17 = new javax.swing.JLabel();
-        jTextField16 = new javax.swing.JTextField();
+        jVorname = new javax.swing.JTextField();
         jLabel18 = new javax.swing.JLabel();
-        jTextField17 = new javax.swing.JTextField();
+        jNachname = new javax.swing.JTextField();
         jLabel19 = new javax.swing.JLabel();
-        jTextField18 = new javax.swing.JTextField();
+        jGeschlecht = new javax.swing.JTextField();
         jLabel20 = new javax.swing.JLabel();
-        jTextField19 = new javax.swing.JTextField();
+        jAge = new javax.swing.JTextField();
         jLabel21 = new javax.swing.JLabel();
-        jTextField20 = new javax.swing.JTextField();
+        jTelefonnummer = new javax.swing.JTextField();
         jLabel22 = new javax.swing.JLabel();
-        jTextField21 = new javax.swing.JTextField();
+        jAdresse = new javax.swing.JTextField();
         jLabel23 = new javax.swing.JLabel();
-        jTextField22 = new javax.swing.JTextField();
+        jGehalt = new javax.swing.JTextField();
         jLabel24 = new javax.swing.JLabel();
-        jTextField23 = new javax.swing.JTextField();
+        jGenommen = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocation(new java.awt.Point(175, 100));
@@ -144,61 +144,61 @@ public class GehalteDerSekretare extends javax.swing.JFrame {
         jLabel16.setForeground(new java.awt.Color(51, 51, 0));
         jLabel16.setText("SekretarID :");
 
-        jTextField14.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jSekID.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(51, 51, 0));
         jLabel15.setText("Ausweis :");
 
-        jTextField15.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jAusweis.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel17.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(51, 51, 0));
         jLabel17.setText("Vorname :");
 
-        jTextField16.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jVorname.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel18.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(51, 51, 0));
         jLabel18.setText("Nachname :");
 
-        jTextField17.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jNachname.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel19.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel19.setForeground(new java.awt.Color(51, 51, 0));
         jLabel19.setText("Geschlecht :");
 
-        jTextField18.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jGeschlecht.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel20.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel20.setForeground(new java.awt.Color(51, 51, 0));
         jLabel20.setText("Age :");
 
-        jTextField19.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jAge.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel21.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel21.setForeground(new java.awt.Color(51, 51, 0));
         jLabel21.setText("Telefonnummer :");
 
-        jTextField20.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jTelefonnummer.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel22.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(51, 51, 0));
         jLabel22.setText("Adresse :");
 
-        jTextField21.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jAdresse.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel23.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel23.setForeground(new java.awt.Color(51, 51, 0));
         jLabel23.setText("Gehalt :");
 
-        jTextField22.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jGehalt.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel24.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel24.setForeground(new java.awt.Color(51, 51, 0));
         jLabel24.setText("Genommen :");
 
-        jTextField23.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jGenommen.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -239,11 +239,11 @@ public class GehalteDerSekretare extends javax.swing.JFrame {
                             .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel18)
                             .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField17, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField18, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jSekID, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jAusweis, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jVorname, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jNachname, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jGeschlecht, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(282, 282, 282)
@@ -254,17 +254,17 @@ public class GehalteDerSekretare extends javax.swing.JFrame {
                                 .addGap(34, 34, 34)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField19)
-                                    .addComponent(jTextField20)
-                                    .addComponent(jTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jAge)
+                                    .addComponent(jTelefonnummer)
+                                    .addComponent(jAdresse, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(88, 88, 88)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jGehalt, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField23, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                    .addComponent(jGenommen, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -287,11 +287,11 @@ public class GehalteDerSekretare extends javax.swing.JFrame {
                                 .addGap(95, 95, 95)
                                 .addComponent(jLabel23)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jGehalt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel24)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextField23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jGenommen, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jButton4)
@@ -300,37 +300,37 @@ public class GehalteDerSekretare extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel16)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jSekID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(17, 17, 17)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addComponent(jLabel20)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jTextField19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jAge, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(17, 17, 17)
                                         .addComponent(jLabel21)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jTelefonnummer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(18, 18, 18)
                                         .addComponent(jLabel22)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(jAdresse, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addComponent(jLabel15)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jAusweis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(18, 18, 18)
                                         .addComponent(jLabel17)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jVorname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addGroup(jPanel1Layout.createSequentialGroup()
                                                 .addGap(44, 44, 44)
-                                                .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(jNachname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addGap(18, 18, 18)
                                                 .addComponent(jLabel19)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addComponent(jGeschlecht, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGroup(jPanel1Layout.createSequentialGroup()
                                                 .addGap(12, 12, 12)
                                                 .addComponent(jLabel18))))))))
@@ -371,24 +371,26 @@ public class GehalteDerSekretare extends javax.swing.JFrame {
         String SekretarID = jTextField1.getText();
         
         Sekretar sekretar = Database.searchSekretarID(SekretarID);
-        jTextField14.setEditable(false);
-        jTextField15.setEditable(false);
-        jTextField16.setEditable(false);
-        jTextField17.setEditable(false);
-        jTextField18.setEditable(false);
-        jTextField19.setEditable(false);
-        jTextField20.setEditable(false);
-        jTextField21.setEditable(false);
-        jTextField14.setText("" + sekretar.getSekretarID());
-        jTextField15.setText(sekretar.getAusweis());
-        jTextField16.setText(sekretar.getVorname());
-        jTextField17.setText(sekretar.getNachname());
-        jTextField18.setText(sekretar.getGeschlecht());
-        jTextField19.setText("" + sekretar.getAge());
-        jTextField20.setText(sekretar.getTelefonnummer());
-        jTextField21.setText(sekretar.getAdresse());
-        jTextField22.setText("" + sekretar.getGehalt());
-        jTextField23.setText("" + sekretar.isGenommen());
+        if (sekretar != null){
+            jSekID.setEditable(false);
+            jAusweis.setEditable(false);
+            jVorname.setEditable(false);
+            jNachname.setEditable(false);
+            jGeschlecht.setEditable(false);
+            jAge.setEditable(false);
+            jTelefonnummer.setEditable(false);
+            jAdresse.setEditable(false);
+            jSekID.setText("" + sekretar.getSekretarID());
+            jAusweis.setText(sekretar.getAusweis());
+            jVorname.setText(sekretar.getVorname());
+            jNachname.setText(sekretar.getNachname());
+            jGeschlecht.setText(sekretar.getGeschlecht());
+            jAge.setText("" + sekretar.getAge());
+            jTelefonnummer.setText(sekretar.getTelefonnummer());
+            jAdresse.setText(sekretar.getAdresse());
+            jGehalt.setText("" + sekretar.getGehalt());
+            jGenommen.setText("" + sekretar.isGenommen());
+        }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -399,20 +401,21 @@ public class GehalteDerSekretare extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        int SekretarID = Integer.parseInt(jTextField1.getText());
-        String Ausweis = jTextField15.getText();
-        String Vorname = jTextField16.getText();
-        String Nachname = jTextField17.getText();
-        String Geschlecht = jTextField18.getText();
-        int Age = Integer.parseInt(jTextField19.getText());
-        String Telefonnummer = jTextField20.getText();
-        String Adresse = jTextField21.getText();
-        float Gehalt = Float.parseFloat(jTextField22.getText());
-        boolean Genommen = Boolean.parseBoolean(jTextField23.getText());
+        int SekretarID = Integer.parseInt(jSekID.getText());
+        String Ausweis = jAusweis.getText();
+        String Vorname = jVorname.getText();
+        String Nachname = jNachname.getText();
+        String Geschlecht = jGeschlecht.getText();
+        int Age = Integer.parseInt(jAge.getText());
+        String Telefonnummer = jTelefonnummer.getText();
+        String Adresse = jAdresse.getText();
+        float Gehalt = Float.parseFloat(jGehalt.getText());
+        boolean Genommen = Boolean.parseBoolean(jGenommen.getText());
       
         try{
             Database.updateSekretar(new Sekretar(SekretarID, Ausweis, Vorname, Nachname, Geschlecht, Age, Telefonnummer, Adresse, Gehalt, Genommen));
             new GehalteDerSekretare().setVisible(true);
+            dispose();
         }
         catch(Exception e){
             e.printStackTrace();
@@ -424,6 +427,7 @@ public class GehalteDerSekretare extends javax.swing.JFrame {
         setVisible(false);
         dispose();
         new GehalteDerSekretare().setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
@@ -432,50 +436,28 @@ public class GehalteDerSekretare extends javax.swing.JFrame {
         int checkSekretarID = 0;
         String Vorname = jTextField8.getText();
         String Nachname = jTextField9.getText();
-        /* try{
-            Connection con = ConnectionProvider.getCon();
-            Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery("select * from sekretar where Vorname='"+Vorname+"' and Nachname='"+Nachname+"'");
-            while(rs.next()){
-                checkSekretarID = 1;
-                jTextField6.setEditable(false);
-                jTextField2.setEditable(false);
-                jTextField3.setEditable(false);
-                jTextField4.setEditable(false);
-                jTextField6.setText(rs.getString(1));
-                jTextField2.setText(rs.getString(3));
-                jTextField3.setText(rs.getString(4));
-                jTextField4.setText(rs.getString(7));
-                jTextField5.setText(rs.getString(9));
-                jTextField7.setText(rs.getString(10));
-            }
-            if(checkSekretarID==0){
-                JOptionPane.showMessageDialog(null, "Eine solche Sekretarname existiert nicht");
-            }
-            
-        }
-        catch(Exception e){
-            JOptionPane.showMessageDialog(null, e);
-        } */
+        
         Sekretar sekretar = Database.searchSekretarName(Vorname, Nachname);
-        jTextField14.setEditable(false);
-        jTextField15.setEditable(false);
-        jTextField16.setEditable(false);
-        jTextField17.setEditable(false);
-        jTextField18.setEditable(false);
-        jTextField19.setEditable(false);
-        jTextField20.setEditable(false);
-        jTextField21.setEditable(false);
-        jTextField14.setText("" + sekretar.getSekretarID());
-        jTextField15.setText(sekretar.getAusweis());
-        jTextField16.setText(sekretar.getVorname());
-        jTextField17.setText(sekretar.getNachname());
-        jTextField18.setText(sekretar.getGeschlecht());
-        jTextField19.setText("" + sekretar.getAge());
-        jTextField20.setText(sekretar.getTelefonnummer());
-        jTextField21.setText(sekretar.getAdresse());
-        jTextField22.setText("" + sekretar.getGehalt());
-        jTextField23.setText("" + sekretar.isGenommen());
+        if (sekretar != null) {
+            jSekID.setEditable(false);
+            jAusweis.setEditable(false);
+            jVorname.setEditable(false);
+            jNachname.setEditable(false);
+            jGeschlecht.setEditable(false);
+            jAge.setEditable(false);
+            jTelefonnummer.setEditable(false);
+            jAdresse.setEditable(false);
+            jSekID.setText("" + sekretar.getSekretarID());
+            jAusweis.setText(sekretar.getAusweis());
+            jVorname.setText(sekretar.getVorname());
+            jNachname.setText(sekretar.getNachname());
+            jGeschlecht.setText(sekretar.getGeschlecht());
+            jAge.setText("" + sekretar.getAge());
+            jTelefonnummer.setText(sekretar.getTelefonnummer());
+            jAdresse.setText(sekretar.getAdresse());
+            jGehalt.setText("" + sekretar.getGehalt());
+            jGenommen.setText("" + sekretar.isGenommen());
+        }
     }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
@@ -514,11 +496,17 @@ public class GehalteDerSekretare extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField jAdresse;
+    private javax.swing.JTextField jAge;
+    private javax.swing.JTextField jAusweis;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
+    private javax.swing.JTextField jGehalt;
+    private javax.swing.JTextField jGenommen;
+    private javax.swing.JTextField jGeschlecht;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel15;
@@ -533,19 +521,13 @@ public class GehalteDerSekretare extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JTextField jNachname;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JTextField jSekID;
+    private javax.swing.JTextField jTelefonnummer;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField15;
-    private javax.swing.JTextField jTextField16;
-    private javax.swing.JTextField jTextField17;
-    private javax.swing.JTextField jTextField18;
-    private javax.swing.JTextField jTextField19;
-    private javax.swing.JTextField jTextField20;
-    private javax.swing.JTextField jTextField21;
-    private javax.swing.JTextField jTextField22;
-    private javax.swing.JTextField jTextField23;
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
+    private javax.swing.JTextField jVorname;
     // End of variables declaration//GEN-END:variables
 }

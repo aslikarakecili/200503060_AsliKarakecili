@@ -341,7 +341,7 @@ public class Database {
             ps.setString(5, kunde.getGeschlecht());
             ps.setInt(6, kunde.getAge());
             ps.setInt(7, kunde.getLange());
-            ps.setInt(8, kunde.getGewicht());
+            ps.setFloat(8, kunde.getGewicht());
             ps.setString(9, kunde.getTelefonnummer());
             ps.setString(10, kunde.getZweck());
             ps.setString(11, kunde.getDiatprogramm());
@@ -365,7 +365,7 @@ public class Database {
                 ResultSet rs = st.executeQuery("select * from kunde where KundenID = '"+KundenID+"'");
                 while(rs.next()){
                     checkKundenID= 1;
-                    Kunde kunde = new Kunde(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getInt(6),rs.getInt(7),rs.getInt(8),rs.getString(9),rs.getString(10),rs.getString(11),rs.getString(12),rs.getFloat(13),rs.getBoolean(14),rs.getString(15));
+                    Kunde kunde = new Kunde(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getInt(6),rs.getInt(7),rs.getFloat(8),rs.getString(9),rs.getString(10),rs.getString(11),rs.getString(12),rs.getFloat(13),rs.getBoolean(14),rs.getString(15));
                     return kunde;
                 }
                 if (checkKundenID == 0){
@@ -388,7 +388,7 @@ public class Database {
             ps.setString(4, kunde.getGeschlecht());
             ps.setInt(5, kunde.getAge());
             ps.setInt(6, kunde.getLange());
-            ps.setInt(7, kunde.getGewicht());
+            ps.setFloat(7, kunde.getGewicht());
             ps.setString(8, kunde.getTelefonnummer());
             ps.setString(9, kunde.getZweck());
             ps.setString(10, kunde.getDiatprogramm());
@@ -425,7 +425,7 @@ public class Database {
                 ResultSet rs = st.executeQuery("select * from kunde where Vorname = '"+Vorname+"' and Nachname = '"+Nachname+"'");
                 while(rs.next()){
                     checkKundenID = 1;
-                    Kunde kunde = new Kunde(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getInt(6),rs.getInt(7),rs.getInt(8),rs.getString(9),rs.getString(10),rs.getString(11),rs.getString(12),rs.getFloat(13),rs.getBoolean(14),rs.getString(15));
+                    Kunde kunde = new Kunde(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getInt(6),rs.getInt(7),rs.getFloat(8),rs.getString(9),rs.getString(10),rs.getString(11),rs.getString(12),rs.getFloat(13),rs.getBoolean(14),rs.getString(15));
                     return kunde;
                 }
                 if (checkKundenID == 0){

@@ -181,7 +181,7 @@ public class TrainerAuflisten extends javax.swing.JFrame {
         // TODO add your handling code here:
         DefaultTableModel model = (DefaultTableModel)jTable1.getModel();
         try{
-            ResultSet rs = Database.getDataSekretarFilterGehalt(1);
+            ResultSet rs = Database.getDataTrainerFilterGehalt(1);
             while(rs.next()){
                 model.addRow(new Object[]{rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getString(6),rs.getString(7),rs.getString(8),rs.getString(9),rs.getString(10)});
             }
@@ -195,7 +195,7 @@ public class TrainerAuflisten extends javax.swing.JFrame {
         // TODO add your handling code here:
         DefaultTableModel model = (DefaultTableModel)jTable1.getModel();
         try{
-            ResultSet rs = Database.getDataSekretarFilterGehalt(0);
+            ResultSet rs = Database.getDataTrainerFilterGehalt(0);
             while(rs.next()){
                 model.addRow(new Object[]{rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getString(6),rs.getString(7),rs.getString(8),rs.getString(9),rs.getString(10)});
             }
@@ -210,13 +210,14 @@ public class TrainerAuflisten extends javax.swing.JFrame {
         setVisible(false);
         dispose();
         new TrainerAuflisten().setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton4MouseClicked
 
     private void jButton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseClicked
         // TODO add your handling code here:
         DefaultTableModel model = (DefaultTableModel)jTable1.getModel();
         try{
-            ResultSet rs = Database.getDataSekretar();
+            ResultSet rs = Database.getDataTrainer();
             while(rs.next()){
                 model.addRow(new Object[]{rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getString(6),rs.getString(7),rs.getString(8),rs.getString(9),rs.getString(10)});
             }
@@ -231,6 +232,7 @@ public class TrainerAuflisten extends javax.swing.JFrame {
         setVisible(false);
         dispose();
         new TrainerAuflisten().setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
 
     /**

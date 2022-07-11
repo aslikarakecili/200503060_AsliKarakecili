@@ -376,24 +376,27 @@ public class GehalteDerTrainer extends javax.swing.JFrame {
         String TrainerID = jTextField1.getText();
         
         Trainer trainer = Database.searchTrainerID(TrainerID);
-        jTextField14.setEditable(false);
-        jTextField15.setEditable(false);
-        jTextField16.setEditable(false);
-        jTextField17.setEditable(false);
-        jTextField18.setEditable(false);
-        jTextField19.setEditable(false);
-        jTextField20.setEditable(false);
-        jTextField21.setEditable(false);
-        jTextField14.setText("" + trainer.getTrainerID());
-        jTextField15.setText(trainer.getAusweis());
-        jTextField16.setText(trainer.getVorname());
-        jTextField17.setText(trainer.getNachname());
-        jTextField18.setText(trainer.getGeschlecht());
-        jTextField19.setText("" + trainer.getAge());
-        jTextField20.setText(trainer.getTelefonnummer());
-        jTextField21.setText(trainer.getAdresse());
-        jTextField22.setText("" + trainer.getGehalt());
-        jTextField23.setText("" + trainer.isGenommen());
+        if (trainer != null) {
+            jTextField14.setEditable(false);
+            jTextField15.setEditable(false);
+            jTextField16.setEditable(false);
+            jTextField17.setEditable(false);
+            jTextField18.setEditable(false);
+            jTextField19.setEditable(false);
+            jTextField20.setEditable(false);
+            jTextField21.setEditable(false);
+            jTextField14.setText("" + trainer.getTrainerID());
+            jTextField15.setText(trainer.getAusweis());
+            jTextField16.setText(trainer.getVorname());
+            jTextField17.setText(trainer.getNachname());
+            jTextField18.setText(trainer.getGeschlecht());
+            jTextField19.setText("" + trainer.getAge());
+            jTextField20.setText(trainer.getTelefonnummer());
+            jTextField21.setText(trainer.getAdresse());
+            jTextField22.setText("" + trainer.getGehalt());
+            jTextField23.setText("" + trainer.isGenommen());
+        }
+        
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
@@ -404,24 +407,27 @@ public class GehalteDerTrainer extends javax.swing.JFrame {
         String Nachname = jTextField9.getText();
         
         Trainer trainer = Database.searchTrainerName(Vorname, Nachname);
-        jTextField14.setEditable(false);
-        jTextField15.setEditable(false);
-        jTextField16.setEditable(false);
-        jTextField17.setEditable(false);
-        jTextField18.setEditable(false);
-        jTextField19.setEditable(false);
-        jTextField20.setEditable(false);
-        jTextField21.setEditable(false);
-        jTextField14.setText("" + trainer.getTrainerID());
-        jTextField15.setText(trainer.getAusweis());
-        jTextField16.setText(trainer.getVorname());
-        jTextField17.setText(trainer.getNachname());
-        jTextField18.setText(trainer.getGeschlecht());
-        jTextField19.setText("" + trainer.getAge());
-        jTextField20.setText(trainer.getTelefonnummer());
-        jTextField21.setText(trainer.getAdresse());
-        jTextField22.setText("" + trainer.getGehalt());
-        jTextField23.setText("" + trainer.isGenommen());
+        if (trainer != null){
+            jTextField14.setEditable(false);
+            jTextField15.setEditable(false);
+            jTextField16.setEditable(false);
+            jTextField17.setEditable(false);
+            jTextField18.setEditable(false);
+            jTextField19.setEditable(false);
+            jTextField20.setEditable(false);
+            jTextField21.setEditable(false);
+            jTextField14.setText("" + trainer.getTrainerID());
+            jTextField15.setText(trainer.getAusweis());
+            jTextField16.setText(trainer.getVorname());
+            jTextField17.setText(trainer.getNachname());
+            jTextField18.setText(trainer.getGeschlecht());
+            jTextField19.setText("" + trainer.getAge());
+            jTextField20.setText(trainer.getTelefonnummer());
+            jTextField21.setText(trainer.getAdresse());
+            jTextField22.setText("" + trainer.getGehalt());
+            jTextField23.setText("" + trainer.isGenommen());
+        }
+        
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -440,6 +446,7 @@ public class GehalteDerTrainer extends javax.swing.JFrame {
         try{
             Database.updateTrainer(new Trainer(TrainerID, Ausweis, Vorname, Nachname, Geschlecht, Age, Telefonnummer, Adresse, Gehalt, Genommen));
             new GehalteDerTrainer().setVisible(true);
+            dispose();
         }
         catch(Exception e){
             e.printStackTrace();
@@ -451,6 +458,7 @@ public class GehalteDerTrainer extends javax.swing.JFrame {
         setVisible(false);
         dispose();
         new GehalteDerTrainer().setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
 
     /**

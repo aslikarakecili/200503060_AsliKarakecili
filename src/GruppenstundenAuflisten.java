@@ -228,6 +228,7 @@ public class GruppenstundenAuflisten extends javax.swing.JFrame {
         setVisible(false);
         dispose();
         new GruppenstundenAuflisten().setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
 
     /**

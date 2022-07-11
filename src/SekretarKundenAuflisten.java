@@ -223,6 +223,7 @@ public class SekretarKundenAuflisten extends javax.swing.JFrame {
         setVisible(false);
         dispose();
         new SekretarKundenAuflisten().setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
 
     /**

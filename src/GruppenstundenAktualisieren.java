@@ -347,6 +347,7 @@ public class GruppenstundenAktualisieren extends javax.swing.JFrame {
         else {
             setVisible(false);
             new GruppenstundenAktualisieren().setVisible(true);
+            dispose();
         }   
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -368,6 +369,7 @@ public class GruppenstundenAktualisieren extends javax.swing.JFrame {
             setVisible(false);
             dispose();
         new GruppenstundenAktualisieren().setVisible(true);
+        dispose();
         }
     }//GEN-LAST:event_jButton6ActionPerformed
 
@@ -390,6 +392,7 @@ public class GruppenstundenAktualisieren extends javax.swing.JFrame {
         try {
             Database.updateGruppenstunde(new Gruppenstunde(GruppenstundenID, Gruppenstundennummer, Kapazitat, Datum, Tag, Dauer, TrainerID));
             new GruppenstundenAktualisieren().setVisible(true);
+            dispose();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -400,6 +403,7 @@ public class GruppenstundenAktualisieren extends javax.swing.JFrame {
         setVisible(false);
         dispose();
         new GruppenstundenAktualisieren().setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
@@ -411,6 +415,7 @@ public class GruppenstundenAktualisieren extends javax.swing.JFrame {
             setVisible(false);
             dispose();
             new GruppenstundenAktualisieren().setVisible(true);
+            dispose();
         }
     }//GEN-LAST:event_jButton5ActionPerformed
 

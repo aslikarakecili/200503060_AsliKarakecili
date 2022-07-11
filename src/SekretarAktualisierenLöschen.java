@@ -511,6 +511,7 @@ public class SekretarAktualisierenLöschen extends javax.swing.JFrame {
                     setVisible(false);
                     dispose();
                     new SekretarAktualisierenLöschen().setVisible(true);
+                    dispose();
                 } 
     }//GEN-LAST:event_jButton3ActionPerformed
 
@@ -536,6 +537,7 @@ public class SekretarAktualisierenLöschen extends javax.swing.JFrame {
                     setVisible(false);
                     dispose();
                 new SekretarAktualisierenLöschen().setVisible(true);
+                dispose();
                 }    
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -565,6 +567,7 @@ public class SekretarAktualisierenLöschen extends javax.swing.JFrame {
         // TODO add your handling code here:
         setVisible(false);
         new SekretarAktualisierenLöschen().setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
@@ -583,6 +586,7 @@ public class SekretarAktualisierenLöschen extends javax.swing.JFrame {
         try{
             Database.updateSekretar(new Sekretar(SekretarID, Ausweis, Vorname, Nachname, Geschlecht, Age, Telefonnummer, Adresse, Gehalt, Genommen));
             new SekretarAktualisierenLöschen().setVisible(true);
+            dispose();
         }
         catch(Exception e){
             e.printStackTrace();
@@ -600,14 +604,16 @@ public class SekretarAktualisierenLöschen extends javax.swing.JFrame {
             setVisible(false);
             dispose();
             new SekretarAktualisierenLöschen().setVisible(true);
+            dispose();
         }
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         // TODO add your handling code here:
-                setVisible(true);
+                setVisible(false);
                 dispose();
                 new SekretarAktualisierenLöschen().setVisible(true);
+                dispose();
               
            
     }//GEN-LAST:event_jButton9ActionPerformed

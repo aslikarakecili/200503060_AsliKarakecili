@@ -206,6 +206,7 @@ public class SekretareAuflisten extends javax.swing.JFrame {
         setVisible(false);
         dispose();
         new SekretareAuflisten().setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton4MouseClicked
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -256,8 +257,7 @@ public class SekretareAuflisten extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new SekretareAuflisten().setVisible(true);
-            }
+                new SekretareAuflisten().setVisible(true);            }
         });
     }
 
