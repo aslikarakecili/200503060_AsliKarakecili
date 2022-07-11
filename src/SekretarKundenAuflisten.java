@@ -96,7 +96,7 @@ public class SekretarKundenAuflisten extends javax.swing.JFrame {
 
             },
             new String [] {
-                "KundenID ", "Vorname ", "Nachname ", "Geschlecht", "Telefonnummer", "Rechnung", "Bezahlt"
+                "KundenID ", "Vorname ", "Nachname ", "Geschlecht", "Telefonnummer", "Rechnung", "Bezahlt", "Rechnungsdatum"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
@@ -171,7 +171,7 @@ public class SekretarKundenAuflisten extends javax.swing.JFrame {
         try{
             ResultSet rs = Database.getDataKundeFilterRechnung(1);
             while(rs.next()){
-                model.addRow(new Object[]{rs.getInt(1),rs.getString(3),rs.getString(4),rs.getString(5),rs.getString(9),rs.getFloat(13),rs.getString(14)});
+                model.addRow(new Object[]{rs.getInt(1),rs.getString(3),rs.getString(4),rs.getString(5),rs.getString(9),rs.getFloat(13),rs.getString(14),rs.getString(16)});
             }
         }
         catch(Exception e){
@@ -185,7 +185,7 @@ public class SekretarKundenAuflisten extends javax.swing.JFrame {
         try{
             ResultSet rs = Database.getDataKundeFilterRechnung(0);
             while(rs.next()){
-                model.addRow(new Object[]{rs.getInt(1),rs.getString(3),rs.getString(4),rs.getString(5),rs.getString(9),rs.getFloat(13),rs.getString(14)});
+                model.addRow(new Object[]{rs.getInt(1),rs.getString(3),rs.getString(4),rs.getString(5),rs.getString(9),rs.getFloat(13),rs.getString(14),rs.getString(16)});
             }
         }
         catch(Exception e){
@@ -199,7 +199,7 @@ public class SekretarKundenAuflisten extends javax.swing.JFrame {
         try{
             ResultSet rs = Database.getDataKunde();
             while(rs.next()){
-                model.addRow(new Object[]{rs.getInt(1),rs.getString(3),rs.getString(4),rs.getString(5),rs.getString(9),rs.getFloat(13),rs.getString(14)});
+                model.addRow(new Object[]{rs.getInt(1),rs.getString(3),rs.getString(4),rs.getString(5),rs.getString(9),rs.getFloat(13),rs.getString(14),rs.getString(16)});
             }
         }
         catch(Exception e){

@@ -23,8 +23,9 @@ public class Kunde {
     private float Rechnung;
     private boolean Bezahlt;
     private String Gruppenstundenum;
+    private String Rechnungsdatum;
     
-    public Kunde (int KundenID, String Ausweis, String Vorname, String Nachname, String Geschlecht, int Age, int Lange, float Gewicht, String Telefonnummer, String Zweck, String Diatprogramm, String Sportprogramm, float Rechnung, boolean Bezahlt, String Gruppenstundenum){
+    public Kunde (int KundenID, String Ausweis, String Vorname, String Nachname, String Geschlecht, int Age, int Lange, float Gewicht, String Telefonnummer, String Zweck, String Diatprogramm, String Sportprogramm, float Rechnung, boolean Bezahlt, String Gruppenstundenum, String Rechnungsdatum){
         this.KundenID = KundenID;
         this.Ausweis = Ausweis;
         this.Vorname = Vorname;
@@ -40,6 +41,7 @@ public class Kunde {
         this.Rechnung = Rechnung;
         this.Bezahlt = Bezahlt;
         this.Gruppenstundenum = Gruppenstundenum;
+        this.Rechnungsdatum = Rechnungsdatum;
     }
 
     public int getKundenID() {
@@ -102,6 +104,10 @@ public class Kunde {
         return Gruppenstundenum;
     }
 
+    public String getRechnungsdatum() {
+        return Rechnungsdatum;
+    }
+
     public void setKundenID(int KundenID) {
         this.KundenID = KundenID;
     }
@@ -160,6 +166,10 @@ public class Kunde {
 
     public void setGruppenstundenum(String Gruppenstundenum) {
         this.Gruppenstundenum = Gruppenstundenum;
+    }
+
+    public void setRechnungsdatum(String Rechnungsdatum) {
+        this.Rechnungsdatum = Rechnungsdatum;
     }
     
 }

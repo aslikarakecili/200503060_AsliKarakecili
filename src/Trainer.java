@@ -18,8 +18,9 @@ public class Trainer {
     private String Adresse;
     private float Gehalt;
     private boolean Genommen;
+    private String Gehaltsdatum;
     
-    public Trainer (int TrainerID, String Ausweis, String Vorname, String Nachname, String Geschlecht, int Age, String Telefonnummer, String Adresse, float Gehalt, boolean Genommen){
+    public Trainer (int TrainerID, String Ausweis, String Vorname, String Nachname, String Geschlecht, int Age, String Telefonnummer, String Adresse, float Gehalt, boolean Genommen, String Gehaltsdatum){
         this.TrainerID = TrainerID;
         this.Ausweis = Ausweis;
         this.Vorname = Vorname;
@@ -30,6 +31,7 @@ public class Trainer {
         this.Adresse = Adresse;
         this.Gehalt = Gehalt;
         this.Genommen = Genommen;
+        this.Gehaltsdatum = Gehaltsdatum;
     } 
 
     public int getTrainerID() {
@@ -72,6 +74,10 @@ public class Trainer {
         return Genommen;
     }
 
+    public String getGehaltsdatum() {
+        return Gehaltsdatum;
+    }
+
     public void setTrainerID(int TrainerID) {
         this.TrainerID = TrainerID;
     }
@@ -110,6 +116,10 @@ public class Trainer {
 
     public void setGenommen(boolean Genommen) {
         this.Genommen = Genommen;
+    }
+
+    public void setGehaltsdatum(String Gehaltsdatum) {
+        this.Gehaltsdatum = Gehaltsdatum;
     }
     
     

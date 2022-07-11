@@ -21,8 +21,9 @@ public class Sekretar {
     private String Adresse;
     private float Gehalt;
     private boolean Genommen;
+    private String Gehaltsdatum;
     
-    public Sekretar (int SekretarID, String Ausweis, String Vorname, String Nachname, String Geschlecht, int Age, String Telefonnummer, String Adresse, float Gehalt, boolean Genommen){
+    public Sekretar (int SekretarID, String Ausweis, String Vorname, String Nachname, String Geschlecht, int Age, String Telefonnummer, String Adresse, float Gehalt, boolean Genommen, String Gehaltsdatum){
         this.SekretarID = SekretarID;
         this.Ausweis = Ausweis;
         this.Vorname = Vorname;
@@ -33,6 +34,7 @@ public class Sekretar {
         this.Adresse = Adresse;
         this.Gehalt = Gehalt;
         this.Genommen = Genommen;
+        this.Gehaltsdatum = Gehaltsdatum;
     } 
 
     public int getSekretarID() {
@@ -75,6 +77,10 @@ public class Sekretar {
         return Genommen;
     }
 
+    public String getGehaltsdatum() {
+        return Gehaltsdatum;
+    }
+
     public void setSekretarID(int SekretarID) {
         this.SekretarID = SekretarID;
     }
@@ -114,7 +120,10 @@ public class Sekretar {
     public void setGenommen(boolean Genommen) {
         this.Genommen = Genommen;
     }
-    
 
+    public void setGehaltsdatum(String Gehaltsdatum) {
+        this.Gehaltsdatum = Gehaltsdatum;
+    }
+    
     
 }

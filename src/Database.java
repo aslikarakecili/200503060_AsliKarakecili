@@ -31,7 +31,7 @@ public class Database {
         public static void addSekretar (Sekretar sekretar) {
             try{
             Connection con = Database.getCon();
-            PreparedStatement ps = con.prepareStatement("insert into sekretar values (?,?,?,?,?,?,?,?,?,?)");
+            PreparedStatement ps = con.prepareStatement("insert into sekretar values (?,?,?,?,?,?,?,?,?,?,?)");
             ps.setInt(1, sekretar.getSekretarID());
             ps.setString(2, sekretar.getAusweis());
             ps.setString(3, sekretar.getVorname());
@@ -42,6 +42,7 @@ public class Database {
             ps.setString(8, sekretar.getAdresse());
             ps.setFloat(9, sekretar.getGehalt());
             ps.setBoolean(10, sekretar.isGenommen());
+            ps.setString(11, sekretar.getGehaltsdatum());
             ps.executeUpdate();
             JOptionPane.showMessageDialog(null, "Erfolgreich Gespeichert");
         }
@@ -52,7 +53,7 @@ public class Database {
         public static void updateSekretar (Sekretar sekretar){
             try{
             Connection con = Database.getCon();
-            PreparedStatement ps = con.prepareStatement("update sekretar set Ausweis=?,Vorname=?,Nachname=?,Geschlecht=?,Age=?,Telefonnummer=?,Adresse=?,Gehalt=?,Genommen=? where SekretarID=?");
+            PreparedStatement ps = con.prepareStatement("update sekretar set Ausweis=?,Vorname=?,Nachname=?,Geschlecht=?,Age=?,Telefonnummer=?,Adresse=?,Gehalt=?,Genommen=?,Gehaltsdatum=? where SekretarID=?");
             ps.setString(1, sekretar.getAusweis());
             ps.setString(2, sekretar.getVorname());
             ps.setString(3, sekretar.getNachname());
@@ -62,7 +63,8 @@ public class Database {
             ps.setString(7, sekretar.getAdresse());
             ps.setFloat(8, sekretar.getGehalt());
             ps.setBoolean(9, sekretar.isGenommen());
-            ps.setInt(10, sekretar.getSekretarID());
+            ps.setString(10, sekretar.getGehaltsdatum());
+            ps.setInt(11, sekretar.getSekretarID());
             ps.executeUpdate();
             JOptionPane.showMessageDialog(null, "Erfolgreich Aktualisiert");
         }
@@ -91,7 +93,7 @@ public class Database {
                 ResultSet rs = st.executeQuery("select * from sekretar where Vorname = '"+Vorname+"' and Nachname = '"+Nachname+"'");
                 while(rs.next()){
                     checkSekretarID = 1;
-                    Sekretar sekretar = new Sekretar(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getInt(6),rs.getString(7),rs.getString(8),rs.getFloat(9),rs.getBoolean(10));
+                    Sekretar sekretar = new Sekretar(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getInt(6),rs.getString(7),rs.getString(8),rs.getFloat(9),rs.getBoolean(10),rs.getString(11));
                     return sekretar;
                 }
                 if (checkSekretarID == 0){
@@ -112,7 +114,7 @@ public class Database {
                 ResultSet rs = st.executeQuery("select * from sekretar where SekretarID = '"+SekretarID+"'");
                 while(rs.next()){
                     checkSekretarID = 1;
-                    Sekretar sekretar = new Sekretar(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getInt(6),rs.getString(7),rs.getString(8),rs.getFloat(9),rs.getBoolean(10));
+                    Sekretar sekretar = new Sekretar(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getInt(6),rs.getString(7),rs.getString(8),rs.getFloat(9),rs.getBoolean(10),rs.getString(11));
                     return sekretar;
                 }
                 if (checkSekretarID == 0){
@@ -173,7 +175,7 @@ public class Database {
         public static void addTrainer (Trainer trainer) {
             try{
             Connection con = Database.getCon();
-            PreparedStatement ps = con.prepareStatement("insert into trainer values (?,?,?,?,?,?,?,?,?,?)");
+            PreparedStatement ps = con.prepareStatement("insert into trainer values (?,?,?,?,?,?,?,?,?,?,?)");
             ps.setInt(1, trainer.getTrainerID());
             ps.setString(2, trainer.getAusweis());
             ps.setString(3, trainer.getVorname());
@@ -184,6 +186,7 @@ public class Database {
             ps.setString(8, trainer.getAdresse());
             ps.setFloat(9, trainer.getGehalt());
             ps.setBoolean(10, trainer.isGenommen());
+            ps.setString(11, trainer.getGehaltsdatum());
             ps.executeUpdate();
             JOptionPane.showMessageDialog(null, "Erfolgreich Gespeichert");
         }
@@ -200,7 +203,7 @@ public class Database {
                 ResultSet rs = st.executeQuery("select * from trainer where TrainerID = '"+TrainerID+"'");
                 while(rs.next()){
                     checkTrainerID= 1;
-                    Trainer trainer = new Trainer(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getInt(6),rs.getString(7),rs.getString(8),rs.getFloat(9),rs.getBoolean(10));
+                    Trainer trainer = new Trainer(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getInt(6),rs.getString(7),rs.getString(8),rs.getFloat(9),rs.getBoolean(10),rs.getString(11));
                     return trainer;
                 }
                 if (checkTrainerID == 0){
@@ -216,7 +219,7 @@ public class Database {
         public static void updateTrainer (Trainer trainer){
             try{
             Connection con = Database.getCon();
-            PreparedStatement ps = con.prepareStatement("update trainer set Ausweis=?,Vorname=?,Nachname=?,Geschlecht=?,Age=?,Telefonnummer=?,Adresse=?,Gehalt=?,Genommen=? where TrainerID=?");
+            PreparedStatement ps = con.prepareStatement("update trainer set Ausweis=?,Vorname=?,Nachname=?,Geschlecht=?,Age=?,Telefonnummer=?,Adresse=?,Gehalt=?,Genommen=?,Gehaltsdatum=? where TrainerID=?");
             ps.setString(1, trainer.getAusweis());
             ps.setString(2, trainer.getVorname());
             ps.setString(3, trainer.getNachname());
@@ -226,7 +229,8 @@ public class Database {
             ps.setString(7, trainer.getAdresse());
             ps.setFloat(8, trainer.getGehalt());
             ps.setBoolean(9, trainer.isGenommen());
-            ps.setInt(10, trainer.getTrainerID());
+            ps.setString(10, trainer.getGehaltsdatum());
+            ps.setInt(11, trainer.getTrainerID());
             ps.executeUpdate();
             JOptionPane.showMessageDialog(null, "Erfolgreich Aktualisiert");
         }
@@ -255,7 +259,7 @@ public class Database {
                 ResultSet rs = st.executeQuery("select * from trainer where Vorname = '"+Vorname+"' and Nachname = '"+Nachname+"'");
                 while(rs.next()){
                     checkTrainerID = 1;
-                    Trainer trainer = new Trainer(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getInt(6),rs.getString(7),rs.getString(8),rs.getFloat(9),rs.getBoolean(10));
+                    Trainer trainer = new Trainer(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getInt(6),rs.getString(7),rs.getString(8),rs.getFloat(9),rs.getBoolean(10),rs.getString(11));
                     return trainer;
                 }
                 if (checkTrainerID == 0){
@@ -333,7 +337,7 @@ public class Database {
         public static void addKunde (Kunde kunde) {
             try{
             Connection con = Database.getCon();
-            PreparedStatement ps = con.prepareStatement("insert into kunde values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+            PreparedStatement ps = con.prepareStatement("insert into kunde values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
             ps.setInt(1, kunde.getKundenID());
             ps.setString(2, kunde.getAusweis());
             ps.setString(3, kunde.getVorname());
@@ -349,6 +353,7 @@ public class Database {
             ps.setFloat(13, kunde.getRechnung());
             ps.setBoolean(14, kunde.isBezahlt());
             ps.setString(15, kunde.getGruppenstundenum());
+            ps.setString(16, kunde.getRechnungsdatum());
             ps.executeUpdate();
             JOptionPane.showMessageDialog(null, "Erfolgreich Gespeichert");
         }
@@ -365,7 +370,7 @@ public class Database {
                 ResultSet rs = st.executeQuery("select * from kunde where KundenID = '"+KundenID+"'");
                 while(rs.next()){
                     checkKundenID= 1;
-                    Kunde kunde = new Kunde(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getInt(6),rs.getInt(7),rs.getFloat(8),rs.getString(9),rs.getString(10),rs.getString(11),rs.getString(12),rs.getFloat(13),rs.getBoolean(14),rs.getString(15));
+                    Kunde kunde = new Kunde(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getInt(6),rs.getInt(7),rs.getFloat(8),rs.getString(9),rs.getString(10),rs.getString(11),rs.getString(12),rs.getFloat(13),rs.getBoolean(14),rs.getString(15),rs.getString(16));
                     return kunde;
                 }
                 if (checkKundenID == 0){
@@ -381,7 +386,7 @@ public class Database {
         public static void updateKunde (Kunde kunde){
             try{
             Connection con = Database.getCon();
-            PreparedStatement ps = con.prepareStatement("update kunde set Ausweis=?,Vorname=?,Nachname=?,Geschlecht=?,Age=?,Lange=?,Gewicht=?,Telefonnummer=?,Zweck=?,Diatprogramm=?,Sportprogramm=?,Rechnung=?,Bezahlt=?,Gruppenstundenum=? where KundenID=?");
+            PreparedStatement ps = con.prepareStatement("update kunde set Ausweis=?,Vorname=?,Nachname=?,Geschlecht=?,Age=?,Lange=?,Gewicht=?,Telefonnummer=?,Zweck=?,Diatprogramm=?,Sportprogramm=?,Rechnung=?,Bezahlt=?,Gruppenstundenum=?,Rechnungsdatum=? where KundenID=?");
             ps.setString(1, kunde.getAusweis());
             ps.setString(2, kunde.getVorname());
             ps.setString(3, kunde.getNachname());
@@ -396,7 +401,8 @@ public class Database {
             ps.setFloat(12, kunde.getRechnung());
             ps.setBoolean(13, kunde.isBezahlt());
             ps.setString(14, kunde.getGruppenstundenum());
-            ps.setInt(15, kunde.getKundenID());
+            ps.setString(15, kunde.getRechnungsdatum());
+            ps.setInt(16, kunde.getKundenID());
             ps.executeUpdate();
             JOptionPane.showMessageDialog(null, "Erfolgreich Aktualisiert");
         }
@@ -425,7 +431,7 @@ public class Database {
                 ResultSet rs = st.executeQuery("select * from kunde where Vorname = '"+Vorname+"' and Nachname = '"+Nachname+"'");
                 while(rs.next()){
                     checkKundenID = 1;
-                    Kunde kunde = new Kunde(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getInt(6),rs.getInt(7),rs.getFloat(8),rs.getString(9),rs.getString(10),rs.getString(11),rs.getString(12),rs.getFloat(13),rs.getBoolean(14),rs.getString(15));
+                    Kunde kunde = new Kunde(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getInt(6),rs.getInt(7),rs.getFloat(8),rs.getString(9),rs.getString(10),rs.getString(11),rs.getString(12),rs.getFloat(13),rs.getBoolean(14),rs.getString(15),rs.getString(16));
                     return kunde;
                 }
                 if (checkKundenID == 0){

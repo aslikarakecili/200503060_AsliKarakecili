@@ -62,7 +62,7 @@ public class SekretareAuflisten extends javax.swing.JFrame {
 
             },
             new String [] {
-                "SekraterID", "Ausweis", "Vorname", "Nachname", "Geschlecht", "Age", "Telefonnummer", "Adresse", "Gehalt", "Genommen"
+                "SekraterID", "Ausweis", "Vorname", "Nachname", "W/M", "Age", "Telefon", "Adresse", "Gehalt", "Genommen", "GDatum"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
@@ -129,7 +129,7 @@ public class SekretareAuflisten extends javax.swing.JFrame {
                 .addGap(14, 14, 14))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(35, 35, 35)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 920, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 936, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -179,7 +179,7 @@ public class SekretareAuflisten extends javax.swing.JFrame {
         try{
             ResultSet rs = Database.getDataSekretarFilterGehalt(1);
             while(rs.next()){
-                model.addRow(new Object[]{rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getString(6),rs.getString(7),rs.getString(8),rs.getString(9),rs.getString(10)});
+                model.addRow(new Object[]{rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getString(6),rs.getString(7),rs.getString(8),rs.getString(9),rs.getString(10),rs.getString(11)});
             }
         }
         catch(Exception e){
@@ -193,7 +193,7 @@ public class SekretareAuflisten extends javax.swing.JFrame {
         try{
             ResultSet rs = Database.getDataSekretarFilterGehalt(0);
             while(rs.next()){
-                model.addRow(new Object[]{rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getString(6),rs.getString(7),rs.getString(8),rs.getString(9),rs.getString(10)});
+                model.addRow(new Object[]{rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getString(6),rs.getString(7),rs.getString(8),rs.getString(9),rs.getString(10),rs.getString(11)});
             }
         }
         catch(Exception e){
@@ -219,7 +219,7 @@ public class SekretareAuflisten extends javax.swing.JFrame {
         try{
             ResultSet rs = Database.getDataSekretar();
             while(rs.next()){
-                model.addRow(new Object[]{rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getString(6),rs.getString(7),rs.getString(8),rs.getString(9),rs.getString(10)});
+                model.addRow(new Object[]{rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getString(6),rs.getString(7),rs.getString(8),rs.getString(9),rs.getString(10),rs.getString(11)});
             }
         }
         catch(Exception e){

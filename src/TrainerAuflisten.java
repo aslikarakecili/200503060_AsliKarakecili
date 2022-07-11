@@ -64,7 +64,7 @@ public class TrainerAuflisten extends javax.swing.JFrame {
 
             },
             new String [] {
-                "TrainerID", "Ausweis", "Vorname", "Nachname", "Geschlecht", "Age", "Telefonnummer", "Adresse", "Gehalt", "Genommen"
+                "TrainerID", "Ausweis", "Vorname", "Nachname", "Geschlecht", "Age", "Telefon", "Adresse", "Gehalt", "Genommen", "GDatum"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
@@ -121,14 +121,15 @@ public class TrainerAuflisten extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(58, 58, 58)
                                 .addComponent(jButton5)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
                         .addComponent(jButton4)
                         .addGap(18, 18, 18)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 454, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(29, 29, 29))
                     .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(11, 11, 11)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 920, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(57, Short.MAX_VALUE))))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

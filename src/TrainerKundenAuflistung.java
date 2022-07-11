@@ -57,7 +57,7 @@ public class TrainerKundenAuflistung extends javax.swing.JFrame {
 
             },
             new String [] {
-                "KundenID", "Vorname", "Nachname", "Geschlecht", "Alter", "Lange", "Gewicht", "Telefonnummer", "Zweck", "Diatprogramm", "Sportprogramm", "Gruppenstundenum"
+                "KundenID", "Vorname", "Nachname", "W/M", "Alter", "Lange", "Gewicht", "Telefon", "Zweck", "Diat", "Sport", "Gruppe"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
