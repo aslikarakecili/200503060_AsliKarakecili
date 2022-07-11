@@ -23,7 +23,7 @@ public class NeuerTrainerHinzufügen extends javax.swing.JFrame {
             int TrainerID = 1;
             String str1 = String.valueOf(TrainerID);
             jLabel12.setText(str1);
-            TrainerID = Database.maxSekretarID();
+            TrainerID = Database.maxTrainerID();
             String str = String.valueOf(TrainerID);
             jLabel12.setText(str);
   

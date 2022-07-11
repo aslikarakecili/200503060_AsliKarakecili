@@ -95,8 +95,9 @@ public class GehalteDerTrainer extends javax.swing.JFrame {
         jTextField1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(204, 51, 255));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/search.pngg.png"))); // NOI18N
-        jButton2.setText("Suchen!");
+        jButton2.setText("Suche Nach ID!");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -146,67 +147,67 @@ public class GehalteDerTrainer extends javax.swing.JFrame {
         });
 
         jLabel16.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(51, 51, 0));
+        jLabel16.setForeground(new java.awt.Color(51, 51, 51));
         jLabel16.setText("TrainerID :");
 
         jTextField14.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(51, 51, 0));
+        jLabel15.setForeground(new java.awt.Color(51, 51, 51));
         jLabel15.setText("Ausweis :");
 
         jTextField15.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel17.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(51, 51, 0));
+        jLabel17.setForeground(new java.awt.Color(51, 51, 51));
         jLabel17.setText("Vorname :");
 
         jTextField16.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel18.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(51, 51, 0));
+        jLabel18.setForeground(new java.awt.Color(51, 51, 51));
         jLabel18.setText("Nachname :");
 
         jTextField17.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel19.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel19.setForeground(new java.awt.Color(51, 51, 0));
+        jLabel19.setForeground(new java.awt.Color(51, 51, 51));
         jLabel19.setText("Geschlecht :");
 
         jTextField18.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel20.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel20.setForeground(new java.awt.Color(51, 51, 0));
+        jLabel20.setForeground(new java.awt.Color(51, 51, 51));
         jLabel20.setText("Age :");
 
         jTextField19.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel21.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel21.setForeground(new java.awt.Color(51, 51, 0));
+        jLabel21.setForeground(new java.awt.Color(51, 51, 51));
         jLabel21.setText("Telefonnummer :");
 
         jTextField20.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel22.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel22.setForeground(new java.awt.Color(51, 51, 0));
+        jLabel22.setForeground(new java.awt.Color(51, 51, 51));
         jLabel22.setText("Adresse :");
 
         jTextField21.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel23.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel23.setForeground(new java.awt.Color(51, 51, 0));
+        jLabel23.setForeground(new java.awt.Color(0, 102, 255));
         jLabel23.setText("Gehaltsbetrag (TL) :");
 
         jTextField22.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel24.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel24.setForeground(new java.awt.Color(51, 51, 0));
+        jLabel24.setForeground(new java.awt.Color(0, 102, 255));
         jLabel24.setText("Genommen (true oder false):");
 
         jTextField23.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel25.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel25.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel25.setForeground(new java.awt.Color(0, 102, 255));
         jLabel25.setText("Gehaltsdatum : (nur in TT.MM.JJJJ Format, oder ein ---) ");
 
         jGehaltsdatum.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
@@ -353,14 +354,14 @@ public class GehalteDerTrainer extends javax.swing.JFrame {
                                 .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(jLabel10)))
                         .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addGap(7, 7, 7)
-                            .addComponent(jButton5))
-                        .addGroup(jPanel1Layout.createSequentialGroup()
                             .addGap(9, 9, 9)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(jLabel2)
                                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addGap(7, 7, 7)
+                            .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addContainerGap(438, Short.MAX_VALUE)))
         );
 

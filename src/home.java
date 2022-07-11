@@ -84,7 +84,7 @@ public class home extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(0, 51, 153));
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/neuer_kunde.png"))); // NOI18N
         jLabel1.setText("Neuer Kunde Hinzufügen");
-        jLabel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jLabel1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel1MouseClicked(evt);
@@ -95,7 +95,7 @@ public class home extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(0, 51, 153));
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/update&delete member.png"))); // NOI18N
         jLabel2.setText("Kunden Aktualisieren / Löschen");
-        jLabel2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jLabel2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel2MouseClicked(evt);
@@ -106,7 +106,7 @@ public class home extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(0, 51, 153));
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/list of members.png"))); // NOI18N
         jLabel4.setText("Kunden Auflisten");
-        jLabel4.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jLabel4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel4MouseClicked(evt);
@@ -117,7 +117,7 @@ public class home extends javax.swing.JFrame {
         jLabel5.setForeground(new java.awt.Color(0, 51, 153));
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/paayment.png"))); // NOI18N
         jLabel5.setText("Bezahlungen der Kunden");
-        jLabel5.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jLabel5.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel5MouseClicked(evt);
@@ -127,7 +127,7 @@ public class home extends javax.swing.JFrame {
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logoutt.jpg"))); // NOI18N
         jLabel6.setText("Log Out (Ausloggen)");
-        jLabel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
+        jLabel6.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabel6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel6MouseClicked(evt);
@@ -137,7 +137,7 @@ public class home extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logout.png"))); // NOI18N
         jLabel7.setText("Exit (Ausgang)");
-        jLabel7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
+        jLabel7.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabel7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel7MouseClicked(evt);
@@ -148,7 +148,7 @@ public class home extends javax.swing.JFrame {
         jLabel8.setForeground(new java.awt.Color(0, 102, 102));
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/addtrainerr.jpg"))); // NOI18N
         jLabel8.setText("Neuer Trainer Hinzufügen");
-        jLabel8.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jLabel8.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel8MouseClicked(evt);
@@ -159,7 +159,7 @@ public class home extends javax.swing.JFrame {
         jLabel10.setForeground(new java.awt.Color(0, 102, 102));
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/update_deletee_trainer.png"))); // NOI18N
         jLabel10.setText("Trainer Aktualisieren / Löschen");
-        jLabel10.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jLabel10.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jLabel10.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel10MouseClicked(evt);
@@ -170,7 +170,7 @@ public class home extends javax.swing.JFrame {
         jLabel11.setForeground(new java.awt.Color(0, 102, 102));
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/auuflistentrainer.png"))); // NOI18N
         jLabel11.setText("Trainer Auflisten");
-        jLabel11.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jLabel11.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel11MouseClicked(evt);
@@ -181,7 +181,7 @@ public class home extends javax.swing.JFrame {
         jLabel12.setForeground(new java.awt.Color(0, 102, 102));
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/gehaltt.png"))); // NOI18N
         jLabel12.setText("Gehalte der Trainer");
-        jLabel12.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jLabel12.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jLabel12.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel12MouseClicked(evt);
@@ -192,7 +192,7 @@ public class home extends javax.swing.JFrame {
         jLabel13.setForeground(new java.awt.Color(102, 0, 102));
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/addssecretary.jpg"))); // NOI18N
         jLabel13.setText("Neuer Sekretar Hinzufügen");
-        jLabel13.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jLabel13.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jLabel13.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel13MouseClicked(evt);
@@ -203,7 +203,7 @@ public class home extends javax.swing.JFrame {
         jLabel14.setForeground(new java.awt.Color(102, 0, 102));
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/uupdatedeletesecretary.png"))); // NOI18N
         jLabel14.setText("Sekretar Aktualisieren / Löschen");
-        jLabel14.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jLabel14.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jLabel14.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel14MouseClicked(evt);
@@ -214,7 +214,7 @@ public class home extends javax.swing.JFrame {
         jLabel15.setForeground(new java.awt.Color(102, 0, 102));
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/liistofsecretary.png"))); // NOI18N
         jLabel15.setText("Sekretare Auflisten");
-        jLabel15.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jLabel15.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jLabel15.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel15MouseClicked(evt);
@@ -225,7 +225,7 @@ public class home extends javax.swing.JFrame {
         jLabel16.setForeground(new java.awt.Color(102, 0, 102));
         jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/ppaymentsecretary.png"))); // NOI18N
         jLabel16.setText("Gehalte der Sekretare");
-        jLabel16.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jLabel16.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jLabel16.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel16MouseClicked(evt);
@@ -264,7 +264,7 @@ public class home extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(67, Short.MAX_VALUE)
+                .addContainerGap(66, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 699, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -315,7 +315,7 @@ public class home extends javax.swing.JFrame {
                                 .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(97, 97, 97)
                                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 721, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 30, Short.MAX_VALUE)))
+                        .addGap(0, 33, Short.MAX_VALUE)))
                 .addContainerGap(122, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -359,7 +359,7 @@ public class home extends javax.swing.JFrame {
                                 .addComponent(jLabel18)
                                 .addGap(119, 119, 119)
                                 .addComponent(jLabel19)))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 337, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
@@ -373,9 +373,7 @@ public class home extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1548, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1554, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

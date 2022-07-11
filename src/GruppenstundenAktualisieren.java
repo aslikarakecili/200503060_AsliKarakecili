@@ -64,18 +64,18 @@ public class GruppenstundenAktualisieren extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setFont(new java.awt.Font("Elephant", 1, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel1.setForeground(new java.awt.Color(204, 0, 153));
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/updateee.png"))); // NOI18N
         jLabel1.setText(" Aktualisiere Gruppenstunden");
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 153, 153));
+        jLabel2.setForeground(new java.awt.Color(51, 153, 255));
         jLabel2.setText("GruppenstundenID :");
 
         jTextField1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
 
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(0, 153, 153));
+        jButton2.setForeground(new java.awt.Color(51, 153, 255));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/search.pngg.png"))); // NOI18N
         jButton2.setText("Suche nach ID!");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -85,13 +85,13 @@ public class GruppenstundenAktualisieren extends javax.swing.JFrame {
         });
 
         jLabel18.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(0, 153, 153));
+        jLabel18.setForeground(new java.awt.Color(51, 153, 255));
         jLabel18.setText("Datum :");
 
         jTextField2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jButton6.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jButton6.setForeground(new java.awt.Color(0, 153, 153));
+        jButton6.setForeground(new java.awt.Color(51, 153, 255));
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/search.pngg.png"))); // NOI18N
         jButton6.setText("Suche nach Datum und Trainer!");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -108,49 +108,49 @@ public class GruppenstundenAktualisieren extends javax.swing.JFrame {
         });
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 153, 153));
+        jLabel3.setForeground(new java.awt.Color(51, 153, 255));
         jLabel3.setText("TrainerID :");
 
         jTextField3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel5.setForeground(new java.awt.Color(153, 0, 102));
         jLabel5.setText("Kapazität :");
 
         jKapazitat.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 102, 0));
-        jLabel6.setText("Datum :");
+        jLabel6.setForeground(new java.awt.Color(153, 0, 102));
+        jLabel6.setText("Datum (in TT.MM.JJJJ Format eingeben) :");
 
         jDatum.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel7.setForeground(new java.awt.Color(153, 0, 102));
         jLabel7.setText("Tag :");
 
         jTag.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel8.setForeground(new java.awt.Color(153, 0, 102));
         jLabel8.setText("Dauer (in Minuten) :");
 
         jDauer.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel9.setForeground(new java.awt.Color(153, 0, 102));
         jLabel9.setText("Gruppenstundennummer :");
 
         jGruppenstundennummer.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel10.setForeground(new java.awt.Color(153, 0, 102));
         jLabel10.setText("TrainerID :");
 
         jTrainerID.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 102, 0));
+        jButton3.setForeground(new java.awt.Color(153, 0, 102));
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/save.png"))); // NOI18N
         jButton3.setText("Speichern");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -160,7 +160,7 @@ public class GruppenstundenAktualisieren extends javax.swing.JFrame {
         });
 
         jButton4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 102, 0));
+        jButton4.setForeground(new java.awt.Color(153, 0, 102));
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/reset.jpg"))); // NOI18N
         jButton4.setText("Zurücksetzen");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -170,7 +170,7 @@ public class GruppenstundenAktualisieren extends javax.swing.JFrame {
         });
 
         jButton5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(255, 102, 0));
+        jButton5.setForeground(new java.awt.Color(153, 0, 102));
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/delete.jpg"))); // NOI18N
         jButton5.setText("Löschen");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -180,7 +180,7 @@ public class GruppenstundenAktualisieren extends javax.swing.JFrame {
         });
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel11.setForeground(new java.awt.Color(102, 102, 102));
         jLabel11.setText("GruppenstundenID :");
 
         jLabel.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -209,11 +209,11 @@ public class GruppenstundenAktualisieren extends javax.swing.JFrame {
                             .addComponent(jKapazitat, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jDatum, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jTag, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jDauer, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 307, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(155, 155, 155)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()

@@ -60,7 +60,7 @@ public class DiatprogrammeAuflisten extends javax.swing.JFrame {
             }
         });
 
-        jButton4.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButton4.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/reset.jpg"))); // NOI18N
         jButton4.setText("Zurücksetzen");
         jButton4.addMouseListener(new java.awt.event.MouseAdapter() {

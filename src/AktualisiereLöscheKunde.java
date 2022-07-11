@@ -509,7 +509,7 @@ public class AktualisiereLöscheKunde extends javax.swing.JFrame {
         Kunde kunde = Database.searchKundenID(KundenID);
         if (kunde != null) {
             jTextField1.setEditable(false);
-            //jKundenID.setEditable(false);
+            jKundenID.setEditable(false);
             jKundenID.setText("" + kunde.getKundenID());
             jAusweis.setText(kunde.getAusweis());
             jVorname.setText(kunde.getVorname());

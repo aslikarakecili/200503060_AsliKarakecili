@@ -102,7 +102,7 @@ public class DiatprogrammeAktualisieren extends javax.swing.JFrame {
         });
 
         jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 102, 204));
+        jButton3.setForeground(new java.awt.Color(255, 102, 51));
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/save.png"))); // NOI18N
         jButton3.setText("Speichern");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -112,7 +112,7 @@ public class DiatprogrammeAktualisieren extends javax.swing.JFrame {
         });
 
         jButton5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(255, 102, 204));
+        jButton5.setForeground(new java.awt.Color(255, 102, 51));
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/delete.jpg"))); // NOI18N
         jButton5.setText("Löschen");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -122,7 +122,7 @@ public class DiatprogrammeAktualisieren extends javax.swing.JFrame {
         });
 
         jButton4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 102, 204));
+        jButton4.setForeground(new java.awt.Color(255, 102, 51));
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/reset.jpg"))); // NOI18N
         jButton4.setText("Zurücksetzen");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
