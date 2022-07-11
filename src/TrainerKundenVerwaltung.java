@@ -18,8 +18,8 @@ public class TrainerKundenVerwaltung extends javax.swing.JFrame {
     public TrainerKundenVerwaltung() {
         initComponents();
         jAusweis.setVisible(false);
-        jTextField11.setVisible(false);
-        jTextField15.setVisible(false);
+        jRechnung.setVisible(false);
+        jBezahlt.setVisible(false);
         jLabel3.setVisible(false);
         jLabel14.setVisible(false);
         jLabel16.setVisible(false);
@@ -64,19 +64,19 @@ public class TrainerKundenVerwaltung extends javax.swing.JFrame {
         jLange = new javax.swing.JTextField();
         jGewicht = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
-        jTelefonnummer = new javax.swing.JTextField();
+        jTelefon = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
         jZweck = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
-        jDiatprogramm = new javax.swing.JTextField();
+        jDiat = new javax.swing.JTextField();
         jLabel13 = new javax.swing.JLabel();
-        jSportprogramm = new javax.swing.JTextField();
+        jSport = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
-        jTextField11 = new javax.swing.JTextField();
+        jRechnung = new javax.swing.JTextField();
         jLabel16 = new javax.swing.JLabel();
-        jTextField15 = new javax.swing.JTextField();
+        jBezahlt = new javax.swing.JTextField();
         jLabel17 = new javax.swing.JLabel();
-        jGruppenstundenummer = new javax.swing.JTextField();
+        jGruppenstunde = new javax.swing.JTextField();
         jButton3 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
 
@@ -190,7 +190,7 @@ public class TrainerKundenVerwaltung extends javax.swing.JFrame {
         jLabel10.setForeground(new java.awt.Color(255, 102, 102));
         jLabel10.setText("Telefonnummer :");
 
-        jTelefonnummer.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jTelefon.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 102, 102));
@@ -202,28 +202,28 @@ public class TrainerKundenVerwaltung extends javax.swing.JFrame {
         jLabel12.setForeground(new java.awt.Color(255, 102, 102));
         jLabel12.setText("Diatprogramm :");
 
-        jDiatprogramm.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jDiat.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 102, 102));
         jLabel13.setText("Sportprogramm :");
 
-        jSportprogramm.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jSport.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(255, 102, 102));
         jLabel14.setText("Rechnung :");
 
-        jTextField11.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jRechnung.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel16.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(255, 102, 102));
         jLabel16.setText("Bezahlt (0=nein, 1=ja) :");
 
-        jTextField15.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jTextField15.addActionListener(new java.awt.event.ActionListener() {
+        jBezahlt.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jBezahlt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField15ActionPerformed(evt);
+                jBezahltActionPerformed(evt);
             }
         });
 
@@ -231,7 +231,7 @@ public class TrainerKundenVerwaltung extends javax.swing.JFrame {
         jLabel17.setForeground(new java.awt.Color(255, 102, 102));
         jLabel17.setText("Gruppenstundenummer :");
 
-        jGruppenstundenummer.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jGruppenstunde.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton3.setForeground(new java.awt.Color(0, 153, 153));
@@ -262,7 +262,7 @@ public class TrainerKundenVerwaltung extends javax.swing.JFrame {
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jRechnung, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 807, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -281,7 +281,7 @@ public class TrainerKundenVerwaltung extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                    .addComponent(jBezahlt, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -327,8 +327,8 @@ public class TrainerKundenVerwaltung extends javax.swing.JFrame {
                                                 .addComponent(jLange)
                                                 .addGap(18, 18, 18)
                                                 .addComponent(jGewicht, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addComponent(jTelefonnummer)
-                                            .addComponent(jDiatprogramm, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jTelefon)
+                                            .addComponent(jDiat, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(jZweck, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -342,8 +342,8 @@ public class TrainerKundenVerwaltung extends javax.swing.JFrame {
                                         .addGap(18, 18, 18)
                                         .addComponent(jButton5))
                                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addComponent(jSportprogramm, javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jGruppenstundenummer, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 283, Short.MAX_VALUE)))))
+                                        .addComponent(jSport, javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jGruppenstunde, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 283, Short.MAX_VALUE)))))
                         .addGap(0, 43, Short.MAX_VALUE)))
                 .addGap(55, 55, 55))
         );
@@ -360,7 +360,7 @@ public class TrainerKundenVerwaltung extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel14)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jRechnung, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jLabel1))))
                 .addGap(41, 41, 41)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -388,11 +388,11 @@ public class TrainerKundenVerwaltung extends javax.swing.JFrame {
                                 .addGap(14, 14, 14)
                                 .addComponent(jLabel13)
                                 .addGap(18, 18, 18)
-                                .addComponent(jSportprogramm, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jSport, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jLabel17)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jGruppenstundenummer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jGruppenstunde, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel9)
@@ -404,7 +404,7 @@ public class TrainerKundenVerwaltung extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addComponent(jLabel10)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTelefonnummer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jTelefon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel11)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -413,13 +413,13 @@ public class TrainerKundenVerwaltung extends javax.swing.JFrame {
                         .addComponent(jLabel12)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jDiatprogramm, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jDiat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jButton3)
                             .addComponent(jButton5)))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel16)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jBezahlt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                         .addGap(65, 65, 65)
                         .addComponent(jLabel19)
@@ -477,6 +477,12 @@ public class TrainerKundenVerwaltung extends javax.swing.JFrame {
         if (kunde != null) {
             jTextField1.setEditable(false);
             jKundenID.setEditable(false);
+            jVorname.setEditable(false);
+            jNachname.setEditable(false);
+            jGeschlecht.setEditable(false);
+            jAge.setEditable(false);
+            jTelefon.setEditable(false);
+            
             jKundenID.setText("" + kunde.getKundenID());
             jAusweis.setText(kunde.getAusweis());
             jVorname.setText(kunde.getVorname());
@@ -485,18 +491,19 @@ public class TrainerKundenVerwaltung extends javax.swing.JFrame {
             jAge.setText("" + kunde.getAge());
             jLange.setText("" + kunde.getLange());
             jGewicht.setText("" + kunde.getGewicht());
-            jTelefonnummer.setText(kunde.getTelefonnummer());
+            jTelefon.setText(kunde.getTelefonnummer());
             jZweck.setText(kunde.getZweck());
-            jDiatprogramm.setText(kunde.getDiatprogramm());
-            jSportprogramm.setText(kunde.getSportprogramm());;
-            jTextField11.setText("" + kunde.getRechnung());
-            jTextField15.setText("" + kunde.isBezahlt());
-            jGruppenstundenummer.setText(kunde.getGruppenstundenum());
+            jDiat.setText(kunde.getDiatprogramm());
+            jSport.setText(kunde.getSportprogramm());;
+            jRechnung.setText("" + kunde.getRechnung());
+            jBezahlt.setText("" + kunde.isBezahlt());
+            jGruppenstunde.setText(kunde.getGruppenstundenum());
         }
         else {
             setVisible(false);
             dispose();
             new TrainerKundenVerwaltung().setVisible(true);
+            dispose();
         }
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -517,24 +524,25 @@ public class TrainerKundenVerwaltung extends javax.swing.JFrame {
             jAge.setText("" + kunde.getAge());
             jLange.setText("" + kunde.getLange());
             jGewicht.setText("" + kunde.getGewicht());
-            jTelefonnummer.setText(kunde.getTelefonnummer());
+            jTelefon.setText(kunde.getTelefonnummer());
             jZweck.setText(kunde.getZweck());
-            jDiatprogramm.setText(kunde.getDiatprogramm());
-            jSportprogramm.setText(kunde.getSportprogramm());;
-            jTextField11.setText("" + kunde.getRechnung());
-            jTextField15.setText("" + kunde.isBezahlt());
-            jGruppenstundenummer.setText(kunde.getGruppenstundenum());
+            jDiat.setText(kunde.getDiatprogramm());
+            jSport.setText(kunde.getSportprogramm());;
+            jRechnung.setText("" + kunde.getRechnung());
+            jBezahlt.setText("" + kunde.isBezahlt());
+            jGruppenstunde.setText(kunde.getGruppenstundenum());
         }
         else {
             setVisible(false);
             dispose();
             new TrainerKundenVerwaltung().setVisible(true);
+            dispose();
         }
     }//GEN-LAST:event_jButton6ActionPerformed
 
-    private void jTextField15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField15ActionPerformed
+    private void jBezahltActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBezahltActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField15ActionPerformed
+    }//GEN-LAST:event_jBezahltActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
@@ -545,17 +553,18 @@ public class TrainerKundenVerwaltung extends javax.swing.JFrame {
         String Geschlecht = jTextField12.getText();
         int Age = Integer.parseInt(jAge.getText());
         int Lange = Integer.parseInt(jLange.getText());
-        int Gewicht = Integer.parseInt(jGewicht.getText());
-        String Telefonnummer = jTelefonnummer.getText();
+        float Gewicht = Float.parseFloat(jGewicht.getText());
+        String Telefonnummer = jTelefon.getText();
         String Zweck = jZweck.getText();
-        String Diatprogramm = jDiatprogramm.getText();
-        String Sportprogramm = jSportprogramm.getText();
-        float Rechnung = Float.parseFloat(jTextField11.getText());
-        boolean Bezahlt = Boolean.parseBoolean(jTextField15.getText());
-        String Gruppenstundenum = jGruppenstundenummer.getText();
+        String Diatprogramm = jDiat.getText();
+        String Sportprogramm = jSport.getText();
+        float Rechnung = Float.parseFloat(jRechnung.getText());
+        boolean Bezahlt = Boolean.parseBoolean(jBezahlt.getText());
+        String Gruppenstundenum = jGruppenstunde.getText();
         try {
             Database.updateKunde(new Kunde(KundenID, Ausweis, Vorname, Nachname, Geschlecht, Age, Lange, Gewicht, Telefonnummer, Zweck, Diatprogramm, Sportprogramm, Rechnung, Bezahlt, Gruppenstundenum));
             new TrainerKundenVerwaltung().setVisible(true);
+            dispose();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -566,6 +575,7 @@ public class TrainerKundenVerwaltung extends javax.swing.JFrame {
         setVisible(false);
         dispose();
         new TrainerKundenVerwaltung().setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
@@ -606,15 +616,16 @@ public class TrainerKundenVerwaltung extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField jAge;
     private javax.swing.JTextField jAusweis;
+    private javax.swing.JTextField jBezahlt;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
-    private javax.swing.JTextField jDiatprogramm;
+    private javax.swing.JTextField jDiat;
     private javax.swing.JTextField jGeschlecht;
     private javax.swing.JTextField jGewicht;
-    private javax.swing.JTextField jGruppenstundenummer;
+    private javax.swing.JTextField jGruppenstunde;
     private javax.swing.JTextField jKundenID;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -638,14 +649,13 @@ public class TrainerKundenVerwaltung extends javax.swing.JFrame {
     private javax.swing.JTextField jLange;
     private javax.swing.JTextField jNachname;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JTextField jRechnung;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JTextField jSportprogramm;
-    private javax.swing.JTextField jTelefonnummer;
+    private javax.swing.JTextField jSport;
+    private javax.swing.JTextField jTelefon;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField11;
     private javax.swing.JTextField jTextField12;
     private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField15;
     private javax.swing.JTextField jTextField17;
     private javax.swing.JTextField jVorname;
     private javax.swing.JTextField jZweck;
