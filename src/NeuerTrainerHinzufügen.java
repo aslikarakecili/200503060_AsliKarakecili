@@ -1,7 +1,6 @@
 
 import java.sql.*;
 import javax.swing.JOptionPane;
-import project.ConnectionProvider;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license

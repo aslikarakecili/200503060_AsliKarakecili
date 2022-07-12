@@ -1,6 +1,5 @@
 import java.sql.*;
 import javax.swing.JOptionPane;
-import project.ConnectionProvider;
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -441,11 +440,11 @@ public class TrainerKundenVerwaltung extends javax.swing.JFrame {
                                     .addComponent(jKundenID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jTelefon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(18, 18, 18)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel4)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                         .addComponent(jLabel9)
-                                        .addComponent(jLabel8)))
+                                        .addComponent(jLabel8))
+                                    .addComponent(jLabel4))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jVorname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -547,7 +546,7 @@ public class TrainerKundenVerwaltung extends javax.swing.JFrame {
             jAusweis.setText(kunde.getAusweis());
             jVorname.setText(kunde.getVorname());
             jNachname.setText(kunde.getNachname());
-            jTextField12.setText(kunde.getGeschlecht());
+            jGeschlecht.setText(kunde.getGeschlecht());
             jAge.setText("" + kunde.getAge());
             jLange.setText("" + kunde.getLange());
             jGewicht.setText("" + kunde.getGewicht());

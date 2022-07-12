@@ -63,23 +63,23 @@
                               <Component id="jLabel17" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
                               <Component id="jLabel18" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel19" alignment="0" min="-2" pref="92" max="-2" attributes="0"/>
-                              <Component id="jTextField14" alignment="0" min="-2" pref="211" max="-2" attributes="0"/>
-                              <Component id="jTextField15" alignment="0" min="-2" pref="211" max="-2" attributes="0"/>
-                              <Component id="jTextField16" alignment="0" min="-2" pref="211" max="-2" attributes="0"/>
-                              <Component id="jTextField17" alignment="1" min="-2" pref="211" max="-2" attributes="0"/>
-                              <Component id="jTextField18" alignment="1" min="-2" pref="211" max="-2" attributes="0"/>
+                              <Component id="jTrainerID" alignment="0" min="-2" pref="211" max="-2" attributes="0"/>
+                              <Component id="jAusweis" alignment="0" min="-2" pref="211" max="-2" attributes="0"/>
+                              <Component id="jVorname" alignment="0" min="-2" pref="211" max="-2" attributes="0"/>
+                              <Component id="jNachname" alignment="1" min="-2" pref="211" max="-2" attributes="0"/>
+                              <Component id="jGeschlecht" alignment="1" min="-2" pref="211" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace pref="90" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="jTextField22" alignment="0" pref="208" max="32767" attributes="0"/>
+                              <Component id="jGehalt" alignment="0" pref="208" max="32767" attributes="0"/>
                               <Component id="jLabel23" alignment="0" min="-2" pref="68" max="-2" attributes="0"/>
                               <Component id="jLabel20" alignment="0" min="-2" pref="43" max="-2" attributes="0"/>
-                              <Component id="jTextField19" alignment="0" max="32767" attributes="0"/>
-                              <Component id="jTextField20" alignment="0" max="32767" attributes="0"/>
-                              <Component id="jTextField21" alignment="0" pref="208" max="32767" attributes="0"/>
+                              <Component id="jAge" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jTelefon" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jAdresse" alignment="0" pref="208" max="32767" attributes="0"/>
                               <Component id="jLabel21" alignment="0" min="-2" pref="128" max="-2" attributes="0"/>
                               <Component id="jLabel22" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
-                              <Component id="jTextField23" alignment="0" pref="208" max="32767" attributes="0"/>
+                              <Component id="jGenommen" alignment="0" pref="208" max="32767" attributes="0"/>
                               <Component id="jLabel24" alignment="0" max="32767" attributes="0"/>
                           </Group>
                           <Group type="103" groupAlignment="0" attributes="0">
@@ -170,16 +170,16 @@
                               <Group type="102" attributes="0">
                                   <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jTextField20" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTelefon" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" attributes="0">
                                   <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jTextField14" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTrainerID" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
                                   <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="jTextField15" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jAusweis" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" attributes="0">
                                   <Component id="jLabel25" min="-2" max="-2" attributes="0"/>
@@ -187,7 +187,6 @@
                                   <Component id="jGehaltsdatum" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
                                   <Group type="103" groupAlignment="3" attributes="0">
@@ -195,11 +194,11 @@
                                       <Component id="jLabel22" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jTextField16" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jVorname" min="-2" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
-                                          <Component id="jTextField17" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jNachname" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
                                               <Component id="jLabel19" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -207,8 +206,8 @@
                                           </Group>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="jTextField18" alignment="3" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jTextField23" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jGeschlecht" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jGenommen" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
@@ -225,11 +224,11 @@
                                           <Component id="jButton4" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" attributes="0">
-                                          <Component id="jTextField21" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jAdresse" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                           <Component id="jLabel23" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Component id="jTextField22" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jGehalt" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -239,7 +238,7 @@
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jTextField19" min="-2" max="-2" attributes="0"/>
+                          <Component id="jAge" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                           <Component id="jButton6" min="-2" max="-2" attributes="0"/>
                       </Group>
@@ -424,7 +423,7 @@
             <Property name="text" type="java.lang.String" value="TrainerID :"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField14">
+        <Component class="javax.swing.JTextField" name="jTrainerID">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="14" style="0"/>
@@ -442,7 +441,7 @@
             <Property name="text" type="java.lang.String" value="Ausweis :"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField15">
+        <Component class="javax.swing.JTextField" name="jAusweis">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="14" style="0"/>
@@ -460,7 +459,7 @@
             <Property name="text" type="java.lang.String" value="Vorname :"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField16">
+        <Component class="javax.swing.JTextField" name="jVorname">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="14" style="0"/>
@@ -478,7 +477,7 @@
             <Property name="text" type="java.lang.String" value="Nachname :"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField17">
+        <Component class="javax.swing.JTextField" name="jNachname">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="14" style="0"/>
@@ -496,7 +495,7 @@
             <Property name="text" type="java.lang.String" value="Geschlecht :"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField18">
+        <Component class="javax.swing.JTextField" name="jGeschlecht">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="14" style="0"/>
@@ -514,7 +513,7 @@
             <Property name="text" type="java.lang.String" value="Age :"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField19">
+        <Component class="javax.swing.JTextField" name="jAge">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="14" style="0"/>
@@ -532,7 +531,7 @@
             <Property name="text" type="java.lang.String" value="Telefonnummer :"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField20">
+        <Component class="javax.swing.JTextField" name="jTelefon">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="14" style="0"/>
@@ -550,7 +549,7 @@
             <Property name="text" type="java.lang.String" value="Adresse :"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField21">
+        <Component class="javax.swing.JTextField" name="jAdresse">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="14" style="0"/>
@@ -568,7 +567,7 @@
             <Property name="text" type="java.lang.String" value="Gehalt :"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField22">
+        <Component class="javax.swing.JTextField" name="jGehalt">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="14" style="0"/>
@@ -586,7 +585,7 @@
             <Property name="text" type="java.lang.String" value="Genommen (true oder false) :"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField23">
+        <Component class="javax.swing.JTextField" name="jGenommen">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="14" style="0"/>

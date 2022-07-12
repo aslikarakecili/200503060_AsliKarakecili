@@ -263,7 +263,7 @@ public class Database {
                     return trainer;
                 }
                 if (checkTrainerID == 0){
-                    JOptionPane.showMessageDialog(null, "Ein solcher Sekretarname existiert nicht");
+                    JOptionPane.showMessageDialog(null, "Ein solcher Trainername existiert nicht");
                 }
                 
             }
